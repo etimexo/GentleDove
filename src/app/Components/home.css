@@ -11,9 +11,9 @@
     }
     .home h1 {
         color: #fff;
-        padding: 6% 15% 0;
+        padding: 8% 15% 0;
         text-align: center;
-        font-size: 6.5rem;
+        font-size: 6.2rem;
     }
     .home .buttons {
         text-align: center;
@@ -35,23 +35,91 @@
         background-color: #fff;
         color: #6919ff;
         border-radius: 5px;
+        position: relative;
+        z-index: 1;
+        transition: .5s;
     }
+    .projects:hover, .projects:focus {
+        color: #fff;
+        background-color: #6919ff;
+        border: 1px solid #fff;
+        transform: scaleX(1.1);
+        margin-right: 40px;
+        cursor: pointer;
+    }
+    .projects::before {
+        content: "";
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background-color: #fff;
+        z-index: -1;
+        transform-origin: right;
+        transition: transform .5s ease;
+        transform: scaleX(1);
+    }
+    .projects:hover::before {
+        transform-origin: right;
+        transition: transform .5s ease;
+        transform: scaleX(0);
+    }
+
+    /* .projects:hover, .projects:focus {
+        background-color: #6919ff;
+        color: #fff;
+        cursor: pointer;
+        border: 1px solid #fff;       
+    } */
+
     .home .services {
         background-color: #6919ff;
         color: #fff;
         border: 1px solid #fff;
+        position: relative;
+        z-index: 1;
+        transition: .5s;
     }
     .services:hover, .services:focus {
+        color: #6919ff;
+        background-color: #fff;
+        border: 1px solid #fff;
+        transform: scaleX(1.1);
+        margin-left: 20px;
+        cursor: pointer;
+    }
+    .services::before {
+        content: "";
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background-color: #6919ff;
+        z-index: -1;
+        transform-origin: right;
+        transition: transform .5s ease;
+        transform: scaleX(1);
+    }
+    .services:hover::before {
+        transform-origin: right;
+        transition: transform .5s ease;
+        transform: scaleX(0);
+    }
+    /* .services:hover, .services:focus {
         background-color: #fff;
         color: #6919ff;
         cursor: pointer;
-    }
-    .projects:hover, .projects:focus {
-        background-color: #6919ff;
-        color: #fff;
-        cursor: pointer;
-        border: 1px solid #fff;
-        transition: .5s ease-in-out;
-    }
+    } */
+    /* @keyframes Animate {
+        0% {
+            background-position: 100% 0;
+        }
+        100% {
+            background-position: -100% 0;
+        }
+    } */
     
-}
+    
+    }
