@@ -8,6 +8,8 @@
     .home {
         height: 100vh;
         background-color: #6919ff;
+        background-image: url('../assets/future-grid.webp');
+        background-size: 100%;
     }
     .home h1 {
         color: #fff;
