@@ -1,45 +1,61 @@
 .home {
+    height: 100vh;
+    background-color: #6919ff;
+    background-image: url('../assets/future-grid.webp');
+    background-size: 100%;
+}
+.home h1 {
+    color: #fff;
+    padding: 9% 15% 0;
+    text-align: center;
+    /* font-size: 300px; */
+    font-size: 5rem;
+}
+.home .buttons {
+    text-align: center;
+    /* width: auto;
+    height: auto; */
+    width: 100%;
+    margin: 0px auto;
+    padding-top: 50px;
+}
+.home-btn {
+    width: 290px;
+    height: 70px;
+    font-size: 1.4rem;
+    margin-right: 20px;
+    border: none;
+    border-radius: 3px;
+}
+.home .services {
+    background-color: #6919ff;
+    color: #fff;
+    border: 1px solid #fff;
+    position: relative;
+    z-index: 1;
+    transition: .5s;
+}
+.home .projects {
+    background-color: #fff;
+    color: #6919ff;
+    border-radius: 5px;
+    position: relative;
+    z-index: 1;
+    transition: .5s;
+}
+@media only screen and (max-width: 1023px) {
     
 }
 @media only screen and (min-width: 1024px) {
     * {
         /* border: 1px solid red; */
     }
-    .home {
-        height: 100vh;
-        background-color: #6919ff;
-        background-image: url('../assets/future-grid.webp');
-        background-size: 100%;
-    }
     .home h1 {
         color: #fff;
         padding: 8% 15% 0;
         text-align: center;
-        font-size: 6.2rem;
-    }
-    .home .buttons {
-        text-align: center;
-        /* width: auto;
-        height: auto; */
-        width: 100%;
-        margin: 0px auto;
-        padding-top: 50px;
-    }
-    .home-btn {
-        width: 290px;
-        height: 70px;
-        font-size: 1.4rem;
-        margin-right: 20px;
-        border: none;
-        border-radius: 3px;
-    }
-    .home .projects {
-        background-color: #fff;
-        color: #6919ff;
-        border-radius: 5px;
-        position: relative;
-        z-index: 1;
-        transition: .5s;
+        /* font-size: 300px; */
+        font-size: 5rem;
     }
     .projects:hover, .projects:focus {
         color: #fff;
@@ -74,15 +90,6 @@
         cursor: pointer;
         border: 1px solid #fff;       
     } */
-
-    .home .services {
-        background-color: #6919ff;
-        color: #fff;
-        border: 1px solid #fff;
-        position: relative;
-        z-index: 1;
-        transition: .5s;
-    }
     .services:hover, .services:focus {
         color: #6919ff;
         background-color: #fff;
