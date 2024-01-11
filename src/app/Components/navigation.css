@@ -1,0 +1,55 @@
+nav {
+    
+    /* background-color: yellow; */
+    position: fixed;
+
+}
+@media only screen and (min-width: 1024px) {
+    nav {
+        height: 50px;
+        background-color: transparent;
+        /* background-blend-mode: color-burn; */
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        width: 98%;
+        padding: 3% 5%;
+        color: #fff;
+        
+    }
+    nav .list {
+        /* padding-right: 20%; */
+    }
+    nav .hamburger {
+        display: none;
+    }
+    nav .logo {
+        /* padding-right: 20%; */
+        font-size: 30px;
+    }
+    nav ul {
+        list-style-type: none;
+    }
+    nav .links .link-item {
+        text-decoration: none;
+        color: #fff;
+        text-transform: uppercase;
+    }
+    ul li {
+        display: inline;
+        padding: 0 20px;
+    }
+    nav .contact {
+        padding: 12px 24px;
+        border: 1px solid #fff;
+        border-radius: 50px;
+        background-color: transparent;
+        font-size: 19px;
+        color: #fff;
+    }
+    .contact:hover, .contact:focus {
+        background-color: #fff;
+        color: #6919ff;
+        cursor: pointer;
+    }
+}
