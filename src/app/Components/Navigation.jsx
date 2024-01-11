@@ -23,7 +23,11 @@ export default function Navigation() {
           </li>
         </ul>
       </div>
-      <div className="hamburger">...</div>
+      <div className="hamburger">
+        <div className="line"></div>
+        <div className="line"></div>
+        <div className="line"></div>
+      </div>
       <div className="logo">GentleDove</div>
         <button className="contact">Hit me up</button>
     </nav>
