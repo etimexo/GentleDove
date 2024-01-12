@@ -3,7 +3,7 @@
     background-color: #6919ff;
     background-image: url('../assets/future-grid.webp');
     background-size: 100%;
-    background: fixed;
+    background-attachment: fixed;
 }
 .home h1 {
     color: #fff;

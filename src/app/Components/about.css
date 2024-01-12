@@ -1,0 +1,30 @@
+
+@media only screen and (min-width: 1024px) {
+    .about {
+        width: 100%;
+        display: flex;
+        align-items: center;
+        background-color: #060918;
+        color: #fff;
+    }
+    .image {
+        width: 50%;
+    }
+    .about-sec {
+        width: 50%;
+        padding: 70px;
+    }
+    .about-btn {
+        width: 8vw;
+        height: 40px;
+        background-color: #100b30;
+        color: #5c17e1;
+        font-size: 20px;
+        border: 1px solid #5c17e1;
+        border-radius: 50px;
+    }
+    .image .profile-pic {
+        width: 100%;
+        height: 80%;
+    }
+}
