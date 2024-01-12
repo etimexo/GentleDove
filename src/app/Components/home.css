@@ -9,7 +9,7 @@
     padding: 9% 15% 0;
     text-align: center;
     /* font-size: 300px; */
-    font-size: 5rem;
+    font-size: 7.5vw;
 }
 .home .buttons {
     text-align: center;
@@ -20,7 +20,7 @@
     padding-top: 50px;
 }
 .home-btn {
-    width: 290px;
+    width: 25vw;
     height: 70px;
     font-size: 1.4rem;
     margin-right: 20px;
@@ -42,6 +42,24 @@
     position: relative;
     z-index: 1;
     transition: .5s;
+}
+@media only screen and (max-width: 639px) {
+    .home .buttons {
+        text-align: center;
+        width: 100%;
+        margin: 0px auto;
+        border: 1px solid red;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    .home .home-btn {
+        /* display: block;
+        width: 45vw;
+        height: 20px;
+        text-align: center; */
+    }
 }
 @media only screen and (max-width: 1023px) {
     
