@@ -1,11 +1,17 @@
+"use client"
 import React from "react";
 import Image from "next/image";
-import Typist from 'react-typist';
-// import {gentleDove} from '../assets/gentledove.jpg'
+import { useTypewriter, Cursor } from "react-simple-typewriter";
 import gentleDove from "../assets/gentledove.jpg";
 import "./about.css";
 
 export default function () {
+  const [typeEffect] = useTypewriter({
+    words: ['Tech enthusiast', 'Full stack developer', 'freelancer'],
+    loop:{},
+    typeSpeed: 70,
+    deleteSpeed: 65,
+  })
   return (
     <div className="about">
       <div className="image">
@@ -19,32 +25,10 @@ export default function () {
         <button className="about-btn">
             About
         </button><br />
-        Lorem ipsum, dolor sit amet consectetur adipisicing elit. <br />A dolorum nulla nesciunt repudiandae corrupti, facilis, vitae voluptates optio, quia eaque dolor vero fugit <br /> numquam cum error exercitationem repellat rem. Consequatur?
-        {/* <Typed 
-            strings = {[
-              "I'm a full stack developer",
-              "I'm a cool person",
-              "just testing...",
-            ]}
-            typeSpeed={110}
-            backSpeed={80}
-            loop
-          />
-        <p> */}gfefr
-        <Typist>
-          Hey
-        </Typist>
-          {/* <Typed 
-            strings = {[
-              "I'm a full stack developer",
-              "I'm a cool person",
-              "just testing...",
-            ]}
-            typeSpeed={110}
-            backSpeed={80}
-            loop
-          /> */}
-        {/* </p> */}
+        <h1 className="type">I'm a <span>{typeEffect}</span></h1>
+          <p>
+          Hi there! I'm Obisesan Elijah(GentleDove), a full-stack developer with a passion for the tech space and everything related to it. Through creativity and innovation, I bring website designs to life. Explore my journey, projects, and let's embark on a meaningful connection together. Welcome to my digital space!
+          </p>
       </div>
     </div>
   );
