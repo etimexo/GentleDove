@@ -3,6 +3,7 @@
     background-color: #6919ff;
     background-image: url('../assets/future-grid.webp');
     background-size: 100%;
+    background: fixed;
 }
 .home h1 {
     color: #fff;
@@ -43,26 +44,57 @@
     z-index: 1;
     transition: .5s;
 }
+@media only screen and (min-width: 270px) and (max-width: 480px) {
+    .home h1 {
+        font-size: 2rem;
+    }
+
+}
 @media only screen and (max-width: 639px) {
+    .home h1 {
+        /* padding-top: 10%; */
+        padding: 18% 10% 8%;
+        font-size: 2.7rem;
+    }
     .home .buttons {
         text-align: center;
         width: 100%;
-        margin: 0px auto;
-        border: 1px solid red;
+        padding: 0;
+        margin: 0 auto;
+        /* border: 1px solid red; */
+        /* background-color: yellow; */
         display: flex;
         flex-direction: column;
         justify-content: center;
         align-items: center;
     }
     .home .home-btn {
+        width: 32vw;
+        display: block;
+        margin-bottom: 20px;
+        text-align: center;
         /* display: block;
         width: 45vw;
         height: 20px;
         text-align: center; */
     }
+    .home .projects {
+        /* display: block; */
+    }
 }
-@media only screen and (max-width: 1023px) {
-    
+@media only screen and (min-width: 415px) {
+
+}
+@media only screen and (min-width: 640px) and (max-width: 1023px) {
+    .home h1 {
+        padding: 20% 10% 2%;
+        font-size: 2.8rem;
+    }
+    .contact {
+        /* width: 20vw; */
+        /* padding: 0;
+        font-size: 255px; */
+    }
 }
 @media only screen and (min-width: 1024px) {
     * {

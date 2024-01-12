@@ -6,7 +6,7 @@ export default function Home() {
   return (
     <div className="home">
       <Navigation />
-      <h1>Web Development and Maintenance, all from the Best!</h1>
+      <h1>Welcome to my digital haven, a place where creativity and innovation collide.</h1>
       <div className="buttons">
         <button className="projects home-btn">View projects</button>
         <button className="services home-btn">My services</button>

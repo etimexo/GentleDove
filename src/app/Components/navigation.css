@@ -21,6 +21,21 @@ nav .contact {
     z-index: 1;
     transition: 0.5s;
   }
+  @media only screen and (min-width: 270px) and (max-width: 480px) {
+    nav {
+      padding-top: 50px;
+    }
+  }
+  @media only screen and (max-width: 639px) {
+    nav {
+      padding-top: 50px;
+    }
+  }
+  @media only screen and (min-width: 640px) and (max-width: 1023px) {
+    nav {
+      padding-top: 60px;
+    }
+}
 @media only screen and (max-width: 1023px) {
   nav .list {
     position: fixed;
