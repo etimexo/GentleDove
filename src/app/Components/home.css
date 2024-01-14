@@ -1,0 +1,143 @@
+.home {
+  height: 100vh;
+  background-color: #6919ff;
+  background-image: url("../assets/future-grid.webp");
+  background-size: 100%;
+  background-attachment: fixed;
+}
+.home h1 {
+  color: #fff;
+  padding: 9% 15% 0;
+  text-align: center;
+  font-size: 7.5vw;
+}
+.home .buttons {
+  text-align: center;
+  width: 100%;
+  margin: 0px auto;
+  padding-top: 50px;
+}
+.home-btn {
+  width: 25vw;
+  height: 70px;
+  font-size: 1.4rem;
+  margin-right: 20px;
+  border: none;
+  border-radius: 3px;
+}
+.home .services {
+  background-color: #6919ff;
+  color: #fff;
+  border: 1px solid #fff;
+  position: relative;
+  z-index: 1;
+  transition: 0.5s;
+}
+.home .projects {
+  background-color: #fff;
+  color: #6919ff;
+  border-radius: 5px;
+  position: relative;
+  z-index: 1;
+  transition: 0.5s;
+}
+@media only screen and (min-width: 270px) and (max-width: 480px) {
+  .home h1 {
+    font-size: 2rem;
+  }
+}
+@media only screen and (max-width: 639px) {
+  .home h1 {
+    padding: 18% 10% 8%;
+    font-size: 2.7rem;
+  }
+  .home .buttons {
+    text-align: center;
+    width: 100%;
+    padding: 0;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  .home .home-btn {
+    width: 32vw;
+    display: block;
+    margin-bottom: 20px;
+    text-align: center;
+  }
+}
+@media only screen and (min-width: 415px) {
+}
+@media only screen and (min-width: 640px) and (max-width: 1023px) {
+  .home h1 {
+    padding: 20% 10% 2%;
+    font-size: 2.8rem;
+  }
+}
+@media only screen and (min-width: 1024px) {
+  * {
+    /* border: 1px solid red; */
+  }
+  .home h1 {
+    color: #fff;
+    padding: 8% 15% 0;
+    text-align: center;
+    font-size: 5rem;
+  }
+  .projects:hover,
+  .projects:focus {
+    color: #fff;
+    background-color: #6919ff;
+    border: 1px solid #fff;
+    transform: scaleX(1.1);
+    margin-right: 40px;
+    cursor: pointer;
+  }
+  .projects::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: #fff;
+    z-index: -1;
+    transform-origin: right;
+    transition: transform 0.5s ease;
+    transform: scaleX(1);
+  }
+  .projects:hover::before {
+    transform-origin: right;
+    transition: transform 0.5s ease;
+    transform: scaleX(0);
+  }
+  .services:hover,
+  .services:focus {
+    color: #6919ff;
+    background-color: #fff;
+    border: 1px solid #fff;
+    transform: scaleX(1.1);
+    margin-left: 20px;
+    cursor: pointer;
+  }
+  .services::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: #6919ff;
+    z-index: -1;
+    transform-origin: right;
+    transition: transform 0.5s ease;
+    transform: scaleX(1);
+  }
+  .services:hover::before {
+    transform-origin: right;
+    transition: transform 0.5s ease;
+    transform: scaleX(0);
+  }
+}

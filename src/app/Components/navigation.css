@@ -1,0 +1,112 @@
+nav {
+  position: fixed;
+  height: 50px;
+  background-color: transparent;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 98%;
+  padding: 3% 5%;
+  color: #fff;
+}
+nav .contact {
+    padding: 12px 24px;
+    /* border: 1px solid #fff; */
+    border: none;
+    border-radius: 50px;
+    background-color: transparent;
+    font-size: 19px;
+    color: #fff;
+    position: relative;
+    z-index: 1;
+    transition: 0.5s;
+  }
+  @media only screen and (min-width: 270px) and (max-width: 480px) {
+    nav {
+      padding-top: 50px;
+    }
+  }
+  @media only screen and (max-width: 639px) {
+    nav {
+      padding-top: 50px;
+    }
+  }
+  @media only screen and (min-width: 640px) and (max-width: 1023px) {
+    nav {
+      padding-top: 60px;
+    }
+}
+@media only screen and (max-width: 1023px) {
+  nav .list {
+    position: fixed;
+    right: -100%;
+    top: 0;
+    flex-direction: column;
+    width: 80%;
+    text-align: left;
+    height: 100vh;
+    transition: 0.5s;
+    background-color: #fff;
+    padding-top: 170px;
+  }
+  nav .line {
+    height: 2px;
+    width: 22px;
+    background-color: #fff;
+    margin-top: 3px;
+  }
+  nav .contact {
+    border: 1px solid #fff;
+    border-radius: 50px;
+  }
+}
+@media only screen and (min-width: 1024px) {
+  nav .hamburger {
+    display: none;
+  }
+  nav .logo {
+    /* padding-right: 20%; */
+    font-size: 30px;
+  }
+  nav ul {
+    list-style-type: none;
+  }
+  nav .links .link-item {
+    text-decoration: none;
+    color: #fff;
+    text-transform: uppercase;
+  }
+  ul li {
+    display: inline;
+    padding: 0 20px;
+  }
+  .contact:hover,
+  .contact:focus {
+    color: #6919ff;
+    background-color: #fff;
+    border: 1px solid #fff;
+    transform: scaleX(1.1);
+    margin-left: 20px;
+    cursor: pointer;
+  }
+  .contact::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: #6919ff;
+    z-index: -1;
+    transform-origin: right;
+    transition: transform 0.5s ease;
+    transform: scaleX(1);
+    border: 1px solid #fff;
+    border-radius: 50px;
+  }
+  .contact:hover::before {
+    transform-origin: right;
+    transition: transform 0.5s ease;
+    transform: scaleX(0);
+  }
+}
