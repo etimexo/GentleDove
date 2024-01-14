@@ -1,9 +1,24 @@
-import React from "react";
+"use client"
+import React, { useEffect, useState } from "react";
 import "./navigation.css";
 
 export default function Navigation() {
+  const [scrolling, setScrolling] = useState(false);
+
+  useEffect(() => {
+    const handleScroll = () => {
+      const scrollTop = window.scrollY;
+      setScrolling(scrollTop > 0)
+    }
+
+    window.addEventListener("scroll", handleScroll);
+
+    return () => {
+      window.removeEventListener("scroll", handleScroll);
+    }
+  }, [])
   return (
-    <nav>
+    <nav className={scrolling ? "scrolling" : ""}>
       <div className="list">
         <ul className="links">
           <li>

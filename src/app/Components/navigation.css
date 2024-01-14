@@ -10,31 +10,30 @@ nav {
   color: #fff;
 }
 nav .contact {
-    padding: 12px 24px;
-    /* border: 1px solid #fff; */
-    border: none;
-    border-radius: 50px;
-    background-color: transparent;
-    font-size: 19px;
-    color: #fff;
-    position: relative;
-    z-index: 1;
-    transition: 0.5s;
+  padding: 12px 24px;
+  border: none;
+  border-radius: 50px;
+  background-color: transparent;
+  font-size: 19px;
+  color: #fff;
+  position: relative;
+  z-index: 1;
+  transition: 0.5s;
+}
+@media only screen and (min-width: 270px) and (max-width: 480px) {
+  nav {
+    padding-top: 50px;
   }
-  @media only screen and (min-width: 270px) and (max-width: 480px) {
-    nav {
-      padding-top: 50px;
-    }
+}
+@media only screen and (max-width: 639px) {
+  nav {
+    padding-top: 50px;
   }
-  @media only screen and (max-width: 639px) {
-    nav {
-      padding-top: 50px;
-    }
+}
+@media only screen and (min-width: 640px) and (max-width: 1023px) {
+  nav {
+    padding-top: 60px;
   }
-  @media only screen and (min-width: 640px) and (max-width: 1023px) {
-    nav {
-      padding-top: 60px;
-    }
 }
 @media only screen and (max-width: 1023px) {
   nav .list {
@@ -61,11 +60,25 @@ nav .contact {
   }
 }
 @media only screen and (min-width: 1024px) {
+  nav {
+    width: 95%;
+    padding: 37px 17px;
+    margin: 2% 0 0 2%;
+    border-radius: 50px;
+    background-blend-mode: color-burn;
+  }
+  nav h1 {
+    font-size: 18vw;
+  }
+  nav.scrolling {
+    background-color: #080b18;
+    border: 0.4px solid #fff;
+    transition: background-color 0.5s ease;
+  }
   nav .hamburger {
     display: none;
   }
   nav .logo {
-    /* padding-right: 20%; */
     font-size: 30px;
   }
   nav ul {
