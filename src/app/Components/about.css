@@ -1,4 +1,42 @@
-
+.about {
+    width: 100%;
+    /* height: 90vh; */
+    /* display: flex; */
+    align-items: center;
+    background-color: #060918;
+    color: #fff;
+}
+.image {
+    width: 100%;
+}
+.about-sec {
+    width: 100%;
+    padding: 40px;
+}
+.about-btn {
+    width: 20vw;
+    height: 50px;
+    background-color: #100b30;
+    color: #5c17e1;
+    font-size: 20px;
+    border: 1px solid #5c17e1;
+    border-radius: 50px;
+    margin-bottom: 30px;
+}
+.image .profile-pic {
+    width: 100%;
+    /* height: 650px; */
+    height: 100%;
+    /* height: 80%; */
+}
+.about-sec p {
+    margin-top: 10px;
+    color: #7f89a5;
+    font-size: 18px;
+}
+.type {
+    font-size: 2.5rem;
+}
 @media only screen and (min-width: 1024px) {
     .about {
         width: 100%;
@@ -14,7 +52,6 @@
     .about-sec {
         width: 50%;
         padding: 40px;
-        /* color: #6427dd; */
     }
     .about-btn {
         width: 12vw;

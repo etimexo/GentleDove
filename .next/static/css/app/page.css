@@ -1,7 +1,45 @@
 /*!**************************************************************************************************************************************************************************************************************************************************************************!*\
   !*** css ./node_modules/next/dist/build/webpack/loaders/css-loader/src/index.js??ruleSet[1].rules[11].oneOf[12].use[2]!./node_modules/next/dist/build/webpack/loaders/postcss-loader/src/index.js??ruleSet[1].rules[11].oneOf[12].use[3]!./src/app/Components/about.css ***!
   \**************************************************************************************************************************************************************************************************************************************************************************/
-
+.about {
+    width: 100%;
+    /* height: 90vh; */
+    /* display: flex; */
+    align-items: center;
+    background-color: #060918;
+    color: #fff;
+}
+.image {
+    width: 100%;
+}
+.about-sec {
+    width: 100%;
+    padding: 40px;
+}
+.about-btn {
+    width: 20vw;
+    height: 50px;
+    background-color: #100b30;
+    color: #5c17e1;
+    font-size: 20px;
+    border: 1px solid #5c17e1;
+    border-radius: 50px;
+    margin-bottom: 30px;
+}
+.image .profile-pic {
+    width: 100%;
+    /* height: 650px; */
+    height: 100%;
+    /* height: 80%; */
+}
+.about-sec p {
+    margin-top: 10px;
+    color: #7f89a5;
+    font-size: 18px;
+}
+.type {
+    font-size: 2.5rem;
+}
 @media only screen and (min-width: 1024px) {
     .about {
         width: 100%;
@@ -17,7 +55,6 @@
     .about-sec {
         width: 50%;
         padding: 40px;
-        /* color: #6427dd; */
     }
     .about-btn {
         width: 12vw;
@@ -47,17 +84,16 @@
 /*!*************************************************************************************************************************************************************************************************************************************************************************!*\
   !*** css ./node_modules/next/dist/build/webpack/loaders/css-loader/src/index.js??ruleSet[1].rules[11].oneOf[12].use[2]!./node_modules/next/dist/build/webpack/loaders/postcss-loader/src/index.js??ruleSet[1].rules[11].oneOf[12].use[3]!./src/app/Components/home.css ***!
   \*************************************************************************************************************************************************************************************************************************************************************************/
-.home {
+/* .home {
   height: 100vh;
-  /* background-color: #6919ff; */
   background-color: #5321b8;
-  background-image: url(/_next/static/media/future-grid.7966de83.webp);
+  background-image: url("../assets/future-grid.webp");
   background-size: 100%;
   background-attachment: fixed;
 }
 .home h1 {
   color: #fff;
-  padding: 9% 15% 0;
+  padding: 10% 15% 0;
   text-align: center;
   font-size: 7.5vw;
 }
@@ -127,14 +163,165 @@
   }
 }
 @media only screen and (min-width: 1024px) {
-  * {
-    /* border: 1px solid red; */
-  }
   .home h1 {
     color: #fff;
     padding: 8% 15% 0;
     text-align: center;
     font-size: 5rem;
+  }
+  .projects:hover,
+  .projects:focus {
+    color: #fff;
+    background-color: #6919ff;
+    border: 1px solid #fff;
+    transform: scaleX(1.1);
+    margin-right: 40px;
+    cursor: pointer;
+  }
+  .projects::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: #fff;
+    z-index: -1;
+    transform-origin: right;
+    transition: transform 0.5s ease;
+    transform: scaleX(1);
+  }
+  .projects:hover::before {
+    transform-origin: right;
+    transition: transform 0.5s ease;
+    transform: scaleX(0);
+  }
+  .services:hover,
+  .services:focus {
+    color: #6919ff;
+    background-color: #fff;
+    border: 1px solid #fff;
+    transform: scaleX(1.1);
+    margin-left: 20px;
+    cursor: pointer;
+  }
+  .services::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: #6919ff;
+    z-index: -1;
+    transform-origin: right;
+    transition: transform 0.5s ease;
+    transform: scaleX(1);
+  }
+  .services:hover::before {
+    transform-origin: right;
+    transition: transform 0.5s ease;
+    transform: scaleX(0);
+  }
+} */
+.home {
+  height: 100vh;
+  background-color: #5321b8;
+  background-image: url(/_next/static/media/future-grid.7966de83.webp);
+  background-size: 100%;
+  background-attachment: fixed;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.home h1 {
+  color: #fff;
+  padding: 10% 15% 0;
+  text-align: center;
+  font-size: 7.5vw;
+}
+
+.home .buttons {
+  text-align: center;
+  width: 100%;
+  padding-top: 50px;
+}
+
+.home-btn {
+  width: 70%;
+  max-width: 300px;
+  height: 70px;
+  font-size: 1.4rem;
+  margin-bottom: 20px;
+  border: none;
+  border-radius: 3px;
+}
+
+.home .services,
+.home .projects {
+  width: 70%;
+  max-width: 400px;
+  margin-bottom: 20px;
+}
+
+@media only screen and (min-width: 270px) and (max-width: 480px) {
+  .home h1 {
+    font-size: 2rem;
+  }
+}
+
+@media only screen and (max-width: 639px) {
+  .home h1 {
+    padding: 18% 10% 8%;
+    font-size: 2.7rem;
+  }
+}
+
+@media only screen and (min-width: 640px) and (max-width: 1023px) {
+  .home h1 {
+    padding: 20% 10% 2%;
+    font-size: 2.8rem;
+  }
+}
+
+@media only screen and (min-width: 1024px) {
+  .home h1 {
+    color: #fff;
+    padding: 8% 15% 0;
+    text-align: center;
+    font-size: 4.6rem;
+  }
+  .home .buttons {
+    display: flex;
+    /* margin-right: 50px; */
+  }
+  .home .home-btn {
+    margin-right: 50px;
+  }
+  .home .services {
+    background-color: #6919ff;
+    color: #fff;
+    border: 1px solid #fff;
+    position: relative;
+    z-index: 1;
+    transition: 0.5s;
+  }
+  .home .projects {
+    background-color: #fff;
+    color: #6919ff;
+    border-radius: 5px;
+    position: relative;
+    z-index: 1;
+    transition: 0.5s;
+  }
+
+  .home .buttons,
+  .home .services,
+  .home .projects {
+    width: 60%;
+    max-width: 800px;
   }
   .projects:hover,
   .projects:focus {
@@ -205,6 +392,7 @@ nav {
   width: 98%;
   padding: 3% 5%;
   color: #fff;
+  top: 0;
 }
 nav .contact {
   padding: 12px 24px;
