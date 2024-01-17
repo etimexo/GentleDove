@@ -3,22 +3,43 @@ import React, { useEffect, useState } from "react";
 import "./navigation.css";
 
 export default function Navigation() {
+  // const [scrolling, setScrolling] = useState(false);
+
+  // useEffect(() => {
+  //   const handleScroll = () => {
+  //     const scrollTop = window.scrollY;
+  //     setScrolling(scrollTop > 0)
+  //   }
+
+  //   window.addEventListener("scroll", handleScroll);
+
+  //   return () => {
+  //     window.removeEventListener("scroll", handleScroll);
+  //   }
+  // }, [])
   const [scrolling, setScrolling] = useState(false);
 
   useEffect(() => {
     const handleScroll = () => {
       const scrollTop = window.scrollY;
-      setScrolling(scrollTop > 0)
-    }
+      setScrolling(scrollTop > 0);
+    };
 
     window.addEventListener("scroll", handleScroll);
 
     return () => {
       window.removeEventListener("scroll", handleScroll);
-    }
-  }, [])
+    };
+  }, []);
+
+  const calculateBackgroundColor = () => {
+    // You can adjust the percentage based on your preference
+    const percentage = scrolling ? 40 : 0;
+
+    return `rgba(8, 11, 24, ${percentage / 100})`;
+  };
   return (
-    <nav className={scrolling ? "scrolling" : ""}>
+    <nav className={scrolling ? "scrolling" : ""} style={{ backgroundColor: calculateBackgroundColor() }}>
       <div className="list">
         <ul className="links">
           <li>
