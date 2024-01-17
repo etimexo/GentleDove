@@ -17,26 +17,25 @@ export default function Navigation() {
   //     window.removeEventListener("scroll", handleScroll);
   //   }
   // }, [])
-  const [scrolling, setScrolling] = useState(false);
+  const [scrolling, setScrolling] = useState(false)
 
   useEffect(() => {
     const handleScroll = () => {
-      const scrollTop = window.scrollY;
-      setScrolling(scrollTop > 0);
+      const scrollTop = window.scrollY
+      setScrolling(scrollTop > 0)
     };
 
-    window.addEventListener("scroll", handleScroll);
+    window.addEventListener("scroll", handleScroll)
 
     return () => {
-      window.removeEventListener("scroll", handleScroll);
-    };
-  }, []);
+      window.removeEventListener("scroll", handleScroll)
+    }
+  }, [])
 
   const calculateBackgroundColor = () => {
-    // You can adjust the percentage based on your preference
     const percentage = scrolling ? 40 : 0;
 
-    return `rgba(8, 11, 24, ${percentage / 100})`;
+    return `rgba(8, 11, 24, ${percentage / 100})`
   };
   return (
     <nav className={scrolling ? "scrolling" : ""} style={{ backgroundColor: calculateBackgroundColor() }}>
