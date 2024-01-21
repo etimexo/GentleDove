@@ -540,19 +540,20 @@ nav .contact {
     background-image: url('../assets/toDo.png');
 } */
 .work {
-    margin-top: 50px;
+    margin: 50px;
     background-color: rgb(13, 1, 24);
 
   }
+
   
   .work .card {
     width: 200px;
     height: 500px;
     color: #fff;
-    padding-right: 20vw;
-    /* display: flex;
+    margin-right: 20px;
+    display: flex;
     align-items: center;
-    justify-content: center; */
+    justify-content: center;
     /* background-size: 100%; */
   }
   .work .netflix {

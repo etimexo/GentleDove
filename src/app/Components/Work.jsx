@@ -74,7 +74,7 @@ const PauseOnHover = () => {
     <div className="work">
       <Slider {...settings}>
         <div className="card netflix">
-          <h3>1</h3>
+          <h3>gfdt</h3>
         </div>
         <div className="card tracker">
           <h3>2</h3>
