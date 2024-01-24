@@ -542,34 +542,38 @@ nav .contact {
 .work {
     margin: 50px;
     background-color: rgb(13, 1, 24);
-
   }
-
+.work * {
+  /* padding-right: 50px; */
+}
   
   .work .card {
-    width: 200px;
-    height: 500px;
+    /* width: 180px; */
+    height: 300px;
     color: #fff;
-    margin-right: 20px;
+    margin-right: 50px;
     display: flex;
     align-items: center;
     justify-content: center;
+    box-sizing: border-box; /* Include margin in the total width */
     /* background-size: 100%; */
+    /* border: 1px solid red; */
   }
   .work .netflix {
-    background-image: url(/_next/static/media/netflix.9b49a8b9.png);
+    background-image: url(/_next/static/media/netflix2.8ffa2af1.png);
+    /* margin-right: 80vw; */
   }
   .work .tracker {
     background-image: url(/_next/static/media/tracker.a777f8a3.png);
   }
   .work .blogr {
-    background-image: url(/_next/static/media/blogr.3be695ab.png);
+    background-image: url(/_next/static/media/blogr2.09cc92e7.png);
   }
   .work .landing {
     background-image: url(/_next/static/media/landing.64ec413c.png);
   }
   .work .age {
-    background-image: url(/_next/static/media/age.03713937.png);
+    background-image: url(/_next/static/media/age2.7eccefdf.png);
   }
   .work .toDo {
     background-image: url(/_next/static/media/toDo.375af11c.png);

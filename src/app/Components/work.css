@@ -28,34 +28,38 @@
 .work {
     margin: 50px;
     background-color: rgb(13, 1, 24);
-
   }
-
+.work * {
+  /* padding-right: 50px; */
+}
   
   .work .card {
-    width: 200px;
-    height: 500px;
+    /* width: 180px; */
+    height: 300px;
     color: #fff;
-    margin-right: 20px;
+    margin-right: 50px;
     display: flex;
     align-items: center;
     justify-content: center;
+    box-sizing: border-box; /* Include margin in the total width */
     /* background-size: 100%; */
+    /* border: 1px solid red; */
   }
   .work .netflix {
-    background-image: url("../assets/netflix.png");
+    background-image: url("../assets/netflix2.png");
+    /* margin-right: 80vw; */
   }
   .work .tracker {
     background-image: url("../assets/tracker.png");
   }
   .work .blogr {
-    background-image: url("../assets/blogr.png");
+    background-image: url("../assets/blogr2.png");
   }
   .work .landing {
     background-image: url("../assets/landing.png");
   }
   .work .age {
-    background-image: url("../assets/age.png");
+    background-image: url("../assets/age2.png");
   }
   .work .toDo {
     background-image: url("../assets/toDo.png");

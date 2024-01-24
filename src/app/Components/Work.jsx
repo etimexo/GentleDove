@@ -67,14 +67,14 @@ const PauseOnHover = () => {
     slidesToScroll: 1,
     autoplay: true,
     autoplaySpeed: 2000,
-    pauseOnHover: true
+    pauseOnHover: false
   };
 
   return (
     <div className="work">
       <Slider {...settings}>
         <div className="card netflix">
-          <h3>gfdt</h3>
+          <h3>This is clone of Netflix's homepage and signup page</h3>
         </div>
         <div className="card tracker">
           <h3>2</h3>
