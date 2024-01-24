@@ -513,17 +513,24 @@ nav .contact {
   !*** css ./node_modules/next/dist/build/webpack/loaders/css-loader/src/index.js??ruleSet[1].rules[11].oneOf[12].use[2]!./node_modules/next/dist/build/webpack/loaders/postcss-loader/src/index.js??ruleSet[1].rules[11].oneOf[12].use[3]!./src/app/Components/work.css ***!
   \*************************************************************************************************************************************************************************************************************************************************************************/
 .work {
-  width: 90%;
-  margin: 50px;
+  width: 100%;
+  padding: 50px;
+  background-color: #060918;
+  /* border: 1px solid red; */
+  border-top: 1px  solid #363535;
 }
 
 .work .card {
   height: 300px;
   width: 10%;
-  border: 2px solid #080320;
+  border: 5px solid #080320;
   border-radius: 15px;
   color: #fff;
   text-align: center;
+}
+.work .gyme {
+  background-image: url(/_next/static/media/gyme2.02f1e8f9.png);
+  background-size: 100%;
 }
 .work .netflix {
   background-image: url(/_next/static/media/netflix2.8ffa2af1.png);
@@ -544,8 +551,38 @@ nav .contact {
 .work .toDo {
   background-image: url(/_next/static/media/toDo2.25a02dd3.png);
 }
+.work .intro {
+  background-image: url(/_next/static/media/intro2.93bc0d44.png);
+}
+.work .but-house {
+  width: 100%;
+  text-align: center;
+}
+.work .preview {
+  color: #080320;
+  background-color: #fff;
+  margin: 95px 10px 8px;
+}
+.work .source {
+  color: #fff;
+  background-color: #080320;
+}
+.preview, .source {
+  display: none;
+  background-color: #ccc7c7;
+  border: none;
+  width: 16vw;
+  height: 50px;
+  border-radius: 20px;
+  font-size: 1.1rem;
+  font-weight: bold;
+}
 
-
+.card:hover .preview,
+.card:hover .source {
+  display: inline-block;
+  cursor: pointer;
+}  
 /*!*****************************************************************************************************************************************************************************************************************************************************************************************!*\
   !*** css ./node_modules/next/dist/build/webpack/loaders/css-loader/src/index.js??ruleSet[1].rules[11].oneOf[12].use[2]!./node_modules/next/dist/build/webpack/loaders/postcss-loader/src/index.js??ruleSet[1].rules[11].oneOf[12].use[3]!./node_modules/slick-carousel/slick/slick.css ***!
   \*****************************************************************************************************************************************************************************************************************************************************************************************/

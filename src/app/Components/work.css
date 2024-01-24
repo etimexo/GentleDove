@@ -1,15 +1,22 @@
 .work {
-  width: 90%;
-  margin: 50px;
+  width: 100%;
+  padding: 50px;
+  background-color: #060918;
+  /* border: 1px solid red; */
+  border-top: 1px  solid #363535;
 }
 
 .work .card {
   height: 300px;
   width: 10%;
-  border: 2px solid #080320;
+  border: 5px solid #080320;
   border-radius: 15px;
   color: #fff;
   text-align: center;
+}
+.work .gyme {
+  background-image: url("../assets/gyme2.png");
+  background-size: 100%;
 }
 .work .netflix {
   background-image: url("../assets/netflix2.png");
@@ -30,4 +37,35 @@
 .work .toDo {
   background-image: url("../assets/toDo2.png");
 }
+.work .intro {
+  background-image: url("../assets/intro2.png");
+}
+.work .but-house {
+  width: 100%;
+  text-align: center;
+}
+.work .preview {
+  color: #080320;
+  background-color: #fff;
+  margin: 95px 10px 8px;
+}
+.work .source {
+  color: #fff;
+  background-color: #080320;
+}
+.preview, .source {
+  display: none;
+  background-color: #ccc7c7;
+  border: none;
+  width: 16vw;
+  height: 50px;
+  border-radius: 20px;
+  font-size: 1.1rem;
+  font-weight: bold;
+}
 
+.card:hover .preview,
+.card:hover .source {
+  display: inline-block;
+  cursor: pointer;
+}  
