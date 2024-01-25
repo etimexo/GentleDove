@@ -509,9 +509,52 @@ nav .contact {
   }
 }
 
-/*!*****************************************************************************************************************************************************************************************************************************************************************************!*\
-  !*** css ./node_modules/next/dist/build/webpack/loaders/css-loader/src/index.js??ruleSet[1].rules[11].oneOf[12].use[2]!./node_modules/next/dist/build/webpack/loaders/postcss-loader/src/index.js??ruleSet[1].rules[11].oneOf[12].use[3]!./src/app/Components/Services.css ***!
-  \*****************************************************************************************************************************************************************************************************************************************************************************/
+/*!****************************************************************************************************************************************************************************************************************************************************************************!*\
+  !*** css ./node_modules/next/dist/build/webpack/loaders/css-loader/src/index.js??ruleSet[1].rules[11].oneOf[12].use[2]!./node_modules/next/dist/build/webpack/loaders/postcss-loader/src/index.js??ruleSet[1].rules[11].oneOf[12].use[3]!./src/app/Components/Service.css ***!
+  \****************************************************************************************************************************************************************************************************************************************************************************/
+.service {
+  width: 100%;
+  min-height: -moz-fit-content;
+  min-height: fit-content;
+  padding: 50px;
+  background-color: #060918;
+}
+.service .but-house {
+  width: 100%;
+  text-align: center;
+}
+.grid {
+    display: grid;
+    grid-template-columns: auto auto;
+    justify-content: space-around;
+    /* width: 100%;
+    height: auto;
+    margin: 0 auto;
+    text-align: center; */
+}
+.service-card {
+    background-color: #0c1021;
+    width: 550px;
+    margin: 20px 0;
+    padding: 40px 20px;
+    height: -moz-fit-content;
+    height: fit-content;
+    color: #9498a5;
+    font-size: 1.1rem;
+    text-align: left;
+    border-bottom-right-radius: 40px;
+    /* border-top-left-radius: 30px; */
+    
+}
+.service-card .head {
+    font-size: 1.9rem;
+    font-weight: bold;
+    margin-bottom: 10px;
+    color: #5b18cf;
+    color: #6419f3;
+
+    text-align: center;
+}
 
 /*!*************************************************************************************************************************************************************************************************************************************************************************!*\
   !*** css ./node_modules/next/dist/build/webpack/loaders/css-loader/src/index.js??ruleSet[1].rules[11].oneOf[12].use[2]!./node_modules/next/dist/build/webpack/loaders/postcss-loader/src/index.js??ruleSet[1].rules[11].oneOf[12].use[3]!./src/app/Components/work.css ***!
