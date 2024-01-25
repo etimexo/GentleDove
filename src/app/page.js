@@ -3,6 +3,7 @@ import Home from './Components/Home'
 import About from './Components/About'
 import Work from './Components/Work'
 import Services from './Components/Service'
+import Contact from './Components/Contact'
 import "./globals.css"
 
 
@@ -13,6 +14,7 @@ export default function () {
       <About />
       <Work />
       <Services />
+      <Contact />
     </div>
   )
 }

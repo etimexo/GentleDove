@@ -1,0 +1,7 @@
+.contact-me {
+    background-color: #060918;
+    display: grid;
+    grid-template-columns: auto auto;
+    padding: 50px;
+
+}
