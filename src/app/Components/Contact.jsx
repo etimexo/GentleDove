@@ -13,9 +13,19 @@ export default function Contact() {
           Don't hesitate to drop me a message, and let's begin creating
           something extraordinary together. Looking forward to connecting with
           you!
-         </p>
+        </p>
       </div>
-      <div className="sec2">boy girl</div>
+      <div className="sec2">
+        <form action="get">
+            <p>Name</p>
+            <input type="text" name="name" id="name" />
+            <p>Message</p>
+            <input type="text" name="message" id="meassage" />
+            <p>E-mail</p>
+            <input type="email" name="email" id="email" />
+            <button type="submit">Send</button>
+        </form>
+      </div>
     </div>
   );
 }
