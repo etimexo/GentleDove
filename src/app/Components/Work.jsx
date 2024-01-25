@@ -14,6 +14,14 @@ const PauseOnHover = () => {
     autoplay: true,
     autoplaySpeed: 2500,
     pauseOnHover: true,
+    responsive: [
+      {
+        breakpoint: 800,
+        settings: {
+          slidesToShow: 1,
+        },
+      },
+    ],
   };
 
   return (
