@@ -1,13 +1,14 @@
 "use client";
 import React from "react";
 import Slider from "react-slick";
+import Image from "next/image";
 import "./work.css";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
-
+// import line1 from "../assets/line2.png"
 const PauseOnHover = () => {
   const settings = {
-    dots: true,
+    dots: false,
     infinite: true,
     slidesToShow: 3,
     slidesToScroll: 1,
@@ -26,6 +27,8 @@ const PauseOnHover = () => {
 
   return (
     <div className="work" id="work">
+      {/* <Image src={line1} /> */}
+      <hr className="hr" />
       <div className="but-house">
         <button className="about-btn">My works</button>
         <br />

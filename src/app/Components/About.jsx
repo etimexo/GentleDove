@@ -57,6 +57,7 @@ export default function () {
           journey, projects, and let's embark on a meaningful connection
           together. Welcome to my digital space!
         </p>
+        
         <div
           id="arrow"
           className={scrolling ? "scrolling" : ""}

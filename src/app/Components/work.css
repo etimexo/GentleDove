@@ -3,12 +3,17 @@
   padding: 50px;
   background-color: #060918;
   /* border: 1px solid red; */
-  border-top: 1px  solid #363535;
+  /* border-top: 1px  solid #363535; */
 }
-
+.hr {
+  width: 80%;
+  margin: 0 auto 40px;
+  height: 1px; 
+  border: none;
+  background: linear-gradient(to right, transparent, #fff, transparent);
+}
 .work .card {
   height: 300px;
-  /* width: 10%; */
   border: 5px solid #080320;
   border-radius: 15px;
   color: #fff;

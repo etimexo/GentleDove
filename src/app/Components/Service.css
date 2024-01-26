@@ -13,6 +13,9 @@
     grid-template-columns: auto;
     justify-content: space-around;
 }
+.service .hr2 {
+  margin: 50px auto -20px;
+}
 .service-card {
     background-color: #0c1021;
     width: 40vw;

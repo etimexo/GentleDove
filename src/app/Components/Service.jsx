@@ -4,6 +4,7 @@ import "./Service.css";
 export default function Service() {
   return (
     <div className="service" id="service">
+      <hr className="hr" />
       <div className="but-house">
         <button className="about-btn">Services</button>
         <br />
@@ -65,6 +66,7 @@ export default function Service() {
           </div>
         </div>
       </div>
+      <hr className="hr hr2" />
     </div>
   );
 }
