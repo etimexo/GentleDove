@@ -103,6 +103,40 @@
         
     }
 }
+/*!*************************************************************************************************************************************************************************************************************************************************************************!*\
+  !*** css ./node_modules/next/dist/build/webpack/loaders/css-loader/src/index.js??ruleSet[1].rules[11].oneOf[12].use[2]!./node_modules/next/dist/build/webpack/loaders/postcss-loader/src/index.js??ruleSet[1].rules[11].oneOf[12].use[3]!./src/app/Components/Code.css ***!
+  \*************************************************************************************************************************************************************************************************************************************************************************/
+.code {
+    background-image: url(/_next/static/media/download.326dbade.png);
+    width: 100%;
+    min-height: -moz-fit-content;
+    min-height: fit-content;
+    padding: 10vw 20vw;
+    margin: 0 auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    color: #fff;
+}
+.code .about-btn {
+    width: -moz-fit-content;
+    width: fit-content;
+    padding: 10px;
+}
+.code p {
+    margin: 10px;
+    color: #9498a5;
+}
+.code .source-code {
+    margin-top: 10px;
+    color: #ffffff;
+    background-color: #ff2e5b;
+    padding: 20px 25px;
+    border: none;
+    font-size: 1.1rem;
+    font-weight: bold;
+}
 /*!****************************************************************************************************************************************************************************************************************************************************************************!*\
   !*** css ./node_modules/next/dist/build/webpack/loaders/css-loader/src/index.js??ruleSet[1].rules[11].oneOf[12].use[2]!./node_modules/next/dist/build/webpack/loaders/postcss-loader/src/index.js??ruleSet[1].rules[11].oneOf[12].use[3]!./src/app/Components/Contact.css ***!
   \****************************************************************************************************************************************************************************************************************************************************************************/
@@ -471,6 +505,10 @@
     transform: scaleX(0);
   }
 }
+
+/*!***************************************************************************************************************************************************************************************************************************************************************************!*\
+  !*** css ./node_modules/next/dist/build/webpack/loaders/css-loader/src/index.js??ruleSet[1].rules[11].oneOf[12].use[2]!./node_modules/next/dist/build/webpack/loaders/postcss-loader/src/index.js??ruleSet[1].rules[11].oneOf[12].use[3]!./src/app/Components/Footer.css ***!
+  \***************************************************************************************************************************************************************************************************************************************************************************/
 
 /*!*******************************************************************************************************************************************************************************************************************************************************************************!*\
   !*** css ./node_modules/next/dist/build/webpack/loaders/css-loader/src/index.js??ruleSet[1].rules[11].oneOf[12].use[2]!./node_modules/next/dist/build/webpack/loaders/postcss-loader/src/index.js??ruleSet[1].rules[11].oneOf[12].use[3]!./src/app/Components/navigation.css ***!

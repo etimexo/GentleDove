@@ -4,6 +4,8 @@ import About from './Components/About'
 import Work from './Components/Work'
 import Services from './Components/Service'
 import Contact from './Components/Contact'
+import Code from './Components/Code'
+import Footer from './Components/Footer'
 import "./globals.css"
 
 
@@ -15,6 +17,8 @@ export default function () {
       <Work />
       <Services />
       <Contact />
+      <Code />
+      <Footer />
     </div>
   )
 }
