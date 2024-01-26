@@ -80,6 +80,30 @@
     .type {
         font-size: 2.5rem;
     }
+    #arrow {
+        display: none;
+        background-color: #fff;
+        position: fixed;
+        z-index: 1;
+        bottom: 10px;
+        right: 20px;
+        border-radius: 70px;
+        padding: 8px;
+    }
+    #phone {
+        position: fixed;
+        z-index: 1;
+        bottom: 10px;
+        left: 20px;
+        border-radius: 70px;
+        padding: 8px;
+    }
+    .up-arrow, .phone {
+        z-index: 1;
+        width: 50px;
+        height: 45px;
+        
+    }
 }
 /*!****************************************************************************************************************************************************************************************************************************************************************************!*\
   !*** css ./node_modules/next/dist/build/webpack/loaders/css-loader/src/index.js??ruleSet[1].rules[11].oneOf[12].use[2]!./node_modules/next/dist/build/webpack/loaders/postcss-loader/src/index.js??ruleSet[1].rules[11].oneOf[12].use[3]!./src/app/Components/Contact.css ***!
@@ -87,12 +111,50 @@
 .contact-me {
     background-color: #060918;
     display: grid;
-    grid-template-columns: 55% 40%;
+    grid-template-columns: 50% 50%;
     padding: 50px;
     color: #fff;
 }
 .contact-me .sec1 {
     margin-right: 50px;
+}
+.contact-me .sec1 p {
+    margin-top: 20px;
+}
+.contact-me .sec2 p {
+    margin: 8px auto;
+    font-size: 1.2rem;
+}
+.contact-me p {
+    color: #9498a5;
+}
+#name, #message, #email {
+    width: 100%;
+    background-color: #161a2c;
+    border: none;
+    margin-bottom: 20px;
+    /* border: 1px solid #9498a5; */
+    border-radius: 5px;
+}
+#name, #message {
+    line-height: 50px;
+}  
+#email {
+    line-height: 70px;
+} 
+.contact-me .flex {
+    display: flex;
+    justify-content: space-between;
+}
+.contact-me .flex p {
+    position: relative;
+    left: -70px;
+}
+.contact-me .sec2 .send-btn {
+    width: 13vw;
+    font-size: 2rem;
+    padding: 10px;
+    font-weight: bolder;
 }
 /*!*************************************************************************************************************************************************************************************************************************************************************************!*\
   !*** css ./node_modules/next/dist/build/webpack/loaders/css-loader/src/index.js??ruleSet[1].rules[11].oneOf[12].use[2]!./node_modules/next/dist/build/webpack/loaders/postcss-loader/src/index.js??ruleSet[1].rules[11].oneOf[12].use[3]!./src/app/Components/home.css ***!
@@ -395,6 +457,9 @@
 /*!*******************************************************************************************************************************************************************************************************************************************************************************!*\
   !*** css ./node_modules/next/dist/build/webpack/loaders/css-loader/src/index.js??ruleSet[1].rules[11].oneOf[12].use[2]!./node_modules/next/dist/build/webpack/loaders/postcss-loader/src/index.js??ruleSet[1].rules[11].oneOf[12].use[3]!./src/app/Components/navigation.css ***!
   \*******************************************************************************************************************************************************************************************************************************************************************************/
+html {
+  scroll-behavior: smooth;
+}
 nav {
   position: fixed;
   height: 50px;
@@ -406,6 +471,7 @@ nav {
   padding: 3% 5%;
   color: #fff;
   top: 0;
+  z-index: 1;
 }
 nav .contact {
   padding: 12px 24px;
@@ -548,8 +614,8 @@ nav .contact {
     padding: 40px 20px;
     height: -moz-fit-content;
     height: fit-content;
-    /* color: #9498a5; */
-    color: #fff;
+    color: #9498a5;
+    /* color: #fff; */
     font-size: 1.1rem;
     text-align: left;
     border-bottom-right-radius: 40px;
@@ -561,7 +627,8 @@ nav .contact {
     font-weight: bold;
     margin-bottom: 10px;
     /* color: #5b18cf; */
-    color: #6419f3;
+    /* color: #6419f3; */
+    color: #fff;
 
     text-align: center;
 }

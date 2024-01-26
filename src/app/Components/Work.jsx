@@ -25,7 +25,7 @@ const PauseOnHover = () => {
   };
 
   return (
-    <div className="work">
+    <div className="work" id="work">
       <div className="but-house">
         <button className="about-btn">My works</button>
         <br />

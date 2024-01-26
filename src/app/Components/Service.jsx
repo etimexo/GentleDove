@@ -3,7 +3,7 @@ import React from "react";
 import "./Service.css";
 export default function Service() {
   return (
-    <div className="service">
+    <div className="service" id="service">
       <div className="but-house">
         <button className="about-btn">Services</button>
         <br />

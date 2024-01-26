@@ -1,3 +1,6 @@
+html {
+  scroll-behavior: smooth;
+}
 nav {
   position: fixed;
   height: 50px;
@@ -9,6 +12,7 @@ nav {
   padding: 3% 5%;
   color: #fff;
   top: 0;
+  z-index: 1;
 }
 nav .contact {
   padding: 12px 24px;

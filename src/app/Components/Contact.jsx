@@ -4,7 +4,7 @@ import "./Contact.css";
 
 export default function Contact() {
   return (
-    <div className="contact-me">
+    <div className="contact-me" id="contact-me">
       <div className="sec1">
         <button className="about-btn">Contact</button>
         <h1>Got a problem to solve?</h1>
@@ -17,13 +17,17 @@ export default function Contact() {
       </div>
       <div className="sec2">
         <form action="get">
-            <p>Name</p>
+            <p>NAME</p>
             <input type="text" name="name" id="name" />
-            <p>Message</p>
-            <input type="text" name="message" id="meassage" />
-            <p>E-mail</p>
+            <p>MESSAGE</p>
+            <input type="text" name="message" id="message" />
+            <p>E-MAIL</p>
             <input type="email" name="email" id="email" />
-            <button type="submit">Send</button>
+            <div className="flex">
+                <p>elijahobisesan01@gmail.com</p>
+                <button type="submit" className="send-btn services">Send</button>
+
+            </div>
         </form>
       </div>
     </div>

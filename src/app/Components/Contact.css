@@ -1,10 +1,48 @@
 .contact-me {
     background-color: #060918;
     display: grid;
-    grid-template-columns: 55% 40%;
+    grid-template-columns: 50% 50%;
     padding: 50px;
     color: #fff;
 }
 .contact-me .sec1 {
     margin-right: 50px;
+}
+.contact-me .sec1 p {
+    margin-top: 20px;
+}
+.contact-me .sec2 p {
+    margin: 8px auto;
+    font-size: 1.2rem;
+}
+.contact-me p {
+    color: #9498a5;
+}
+#name, #message, #email {
+    width: 100%;
+    background-color: #161a2c;
+    border: none;
+    margin-bottom: 20px;
+    /* border: 1px solid #9498a5; */
+    border-radius: 5px;
+}
+#name, #message {
+    line-height: 50px;
+}  
+#email {
+    line-height: 70px;
+} 
+.contact-me .flex {
+    display: flex;
+    justify-content: space-between;
+}
+.contact-me .flex p {
+    position: relative;
+    left: -70px;
+}
+.contact-me .sec2 .send-btn {
+    width: 13vw;
+    font-size: 2rem;
+    padding: 10px;
+    font-weight: bolder;
 }

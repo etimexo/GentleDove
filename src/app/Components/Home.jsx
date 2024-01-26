@@ -4,7 +4,7 @@ import Navigation from "./Navigation";
 
 export default function Home() {
   return (
-    <div className="home">
+    <div className="home" id="home">
       <Navigation />
       <h1>
         Welcome to my digital haven, a place where creativity and innovation
