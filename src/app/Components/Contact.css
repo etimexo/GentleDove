@@ -1,8 +1,7 @@
 .contact-me {
     background-color: #060918;
     display: grid;
-    grid-template-columns: 50% 50%;
-    align-items: center;
+    grid-template-columns: auto;
     padding: 50px;
     color: #fff;
 }
@@ -27,21 +26,21 @@
     border-radius: 5px;
 }
 #name, #message {
-    line-height: 50px;
+    line-height: 7vh;
+    width: 100%;
 }  
 #email {
-    line-height: 70px;
+    line-height: 9vh;
+    width: 100%;
 } 
-.contact-me .flex {
-    display: flex;
-    justify-content: space-between;
+.send-btn {
+    width: 25vw;
 }
 .contact-me .flex p {
     position: relative;
     left: -70px;
 }
 .contact-me .sec2 .send-btn {
-    width: 13vw;
     font-size: 2rem;
     padding: 10px;
     font-weight: bolder;
@@ -58,4 +57,41 @@
 .envelope {
     width: 20px;
     margin-right: 3px;
+}
+.send-btn {
+    width: 100%;
+}
+.s-desktop {
+    display: none;
+}
+@media only screen and (min-width: 1024px) {
+    .s-desktop {
+        display: block;
+    }
+    .s-mobile {
+        display: none;
+    }
+    .b-mobile {
+        display: none;
+    }
+    .send-btn {
+        width: 13vw;
+    }
+    .contact-me {
+        background-color: #060918;
+        display: grid;
+        grid-template-columns: 50% 50%;
+        align-items: center;
+        padding: 50px;
+        color: #fff;
+    }
+    .contact-me .flex {
+        display: flex;
+        justify-content: space-between;
+    }
+    .contact-me .flex2 {
+        display: flex;
+        align-items: center;
+        padding-left: 70px;
+    }
 }

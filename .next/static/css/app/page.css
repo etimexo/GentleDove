@@ -38,6 +38,39 @@
 .type {
     font-size: 2.5rem;
 }
+#arrow {
+    /* width: 20vw; */
+    display: none;
+    background-color: #fff;
+    position: fixed;
+    z-index: 1;
+    bottom: 20px;
+    right: 20px;
+    border-radius: 70px;
+    padding: 8px;
+}
+#phone {
+    position: fixed;
+    z-index: 1;
+    bottom: 10px;
+    left: 20px;
+    border-radius: 70px;
+    padding: 8px;
+}
+.up-arrow, .phone {
+    z-index: 1;
+    width: 50px;
+    height: 45px;  
+}
+.up-arrow {
+    width: 27px;
+    height: 23px;
+}
+.phone:hover {
+    background-color: #fff;
+    border: none;
+    border-radius: 30px;
+}
 @media only screen and (min-width: 1024px) {
     .about {
         width: 100%;
@@ -99,8 +132,7 @@
     .up-arrow, .phone {
         z-index: 1;
         width: 50px;
-        height: 45px;
-        
+        height: 45px;  
     }
     .phone:hover {
         background-color: #fff;
@@ -150,8 +182,7 @@
 .contact-me {
     background-color: #060918;
     display: grid;
-    grid-template-columns: 50% 50%;
-    align-items: center;
+    grid-template-columns: auto;
     padding: 50px;
     color: #fff;
 }
@@ -176,21 +207,21 @@
     border-radius: 5px;
 }
 #name, #message {
-    line-height: 50px;
+    line-height: 7vh;
+    width: 100%;
 }  
 #email {
-    line-height: 70px;
+    line-height: 9vh;
+    width: 100%;
 } 
-.contact-me .flex {
-    display: flex;
-    justify-content: space-between;
+.send-btn {
+    width: 25vw;
 }
 .contact-me .flex p {
     position: relative;
     left: -70px;
 }
 .contact-me .sec2 .send-btn {
-    width: 13vw;
     font-size: 2rem;
     padding: 10px;
     font-weight: bolder;
@@ -207,6 +238,43 @@
 .envelope {
     width: 20px;
     margin-right: 3px;
+}
+.send-btn {
+    width: 100%;
+}
+.s-desktop {
+    display: none;
+}
+@media only screen and (min-width: 1024px) {
+    .s-desktop {
+        display: block;
+    }
+    .s-mobile {
+        display: none;
+    }
+    .b-mobile {
+        display: none;
+    }
+    .send-btn {
+        width: 13vw;
+    }
+    .contact-me {
+        background-color: #060918;
+        display: grid;
+        grid-template-columns: 50% 50%;
+        align-items: center;
+        padding: 50px;
+        color: #fff;
+    }
+    .contact-me .flex {
+        display: flex;
+        justify-content: space-between;
+    }
+    .contact-me .flex2 {
+        display: flex;
+        align-items: center;
+        padding-left: 70px;
+    }
 }
 /*!*************************************************************************************************************************************************************************************************************************************************************************!*\
   !*** css ./node_modules/next/dist/build/webpack/loaders/css-loader/src/index.js??ruleSet[1].rules[11].oneOf[12].use[2]!./node_modules/next/dist/build/webpack/loaders/postcss-loader/src/index.js??ruleSet[1].rules[11].oneOf[12].use[3]!./src/app/Components/home.css ***!
@@ -533,13 +601,35 @@
   width: 100%;
   margin: 0 auto;
   text-align: center;
+  display: flex;
+  text-align: center;
+  justify-content: center;
 }
 .footer .link-item {
   color: #9498a5;
   font-weight: bold;
   text-transform: uppercase;
+  padding-right: 10px;
+  /* display: inline; */
+  /* border: 1px solid red; */
 }
-
+.footer .icons {
+    width: 100%;
+    text-align: center;
+}
+.footer .icons .icon {
+    /* text-align: center; */
+    width: 24px;
+    margin-right: 12px;
+    color: #9498a5;
+/* background-color: #9498a5; */
+/* border-radius: 20px; */
+border: none;
+    /* height: 15px; */
+}
+@media only screen and (min-width: 1024px) {
+    
+}
 /*!*******************************************************************************************************************************************************************************************************************************************************************************!*\
   !*** css ./node_modules/next/dist/build/webpack/loaders/css-loader/src/index.js??ruleSet[1].rules[11].oneOf[12].use[2]!./node_modules/next/dist/build/webpack/loaders/postcss-loader/src/index.js??ruleSet[1].rules[11].oneOf[12].use[3]!./src/app/Components/navigation.css ***!
   \*******************************************************************************************************************************************************************************************************************************************************************************/
@@ -547,6 +637,7 @@ html {
   scroll-behavior: smooth;
 }
 nav {
+  width: 100%;
   position: fixed;
   height: 50px;
   background-color: transparent;
@@ -558,6 +649,14 @@ nav {
   color: #fff;
   top: 0;
   z-index: 1;
+}
+nav.scrolling {
+  background-color: #080b18;
+  /* border: 0.4px solid #fff; */
+  transition: background-color 0.5s ease;
+  padding: 35px;
+  margin-top: 10px;
+  border-radius: 50px;
 }
 nav .contact {
   padding: 12px 24px;
@@ -698,7 +797,7 @@ nav .contact {
 }
 .service-card {
     background-color: #0c1021;
-    width: 40vw;
+    width: 75vw;
     margin: 20px 0;
     padding: 40px 20px;
     height: -moz-fit-content;
@@ -719,6 +818,18 @@ nav .contact {
     .grid {
         grid-template-columns: auto auto;
     }
+    .service-card {
+      background-color: #0c1021;
+      width: 40vw;
+      margin: 20px 0;
+      padding: 40px 20px;
+      height: -moz-fit-content;
+      height: fit-content;
+      color: #9498a5;
+      font-size: 1.1rem;
+      text-align: left;
+      border-bottom-right-radius: 40px;    
+  }
   }
 /*!*************************************************************************************************************************************************************************************************************************************************************************!*\
   !*** css ./node_modules/next/dist/build/webpack/loaders/css-loader/src/index.js??ruleSet[1].rules[11].oneOf[12].use[2]!./node_modules/next/dist/build/webpack/loaders/postcss-loader/src/index.js??ruleSet[1].rules[11].oneOf[12].use[3]!./src/app/Components/work.css ***!

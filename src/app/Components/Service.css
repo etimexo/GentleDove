@@ -18,7 +18,7 @@
 }
 .service-card {
     background-color: #0c1021;
-    width: 40vw;
+    width: 75vw;
     margin: 20px 0;
     padding: 40px 20px;
     height: fit-content;
@@ -38,4 +38,15 @@
     .grid {
         grid-template-columns: auto auto;
     }
+    .service-card {
+      background-color: #0c1021;
+      width: 40vw;
+      margin: 20px 0;
+      padding: 40px 20px;
+      height: fit-content;
+      color: #9498a5;
+      font-size: 1.1rem;
+      text-align: left;
+      border-bottom-right-radius: 40px;    
+  }
   }
