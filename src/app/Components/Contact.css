@@ -27,14 +27,14 @@
 }
 #name, #message {
     line-height: 7vh;
-    width: 100%;
+    width:80%;
 }  
 #email {
     line-height: 9vh;
-    width: 100%;
+    width: 80%;
 } 
 .send-btn {
-    width: 25vw;
+    /* width: 18vw; */
 }
 .contact-me .flex p {
     position: relative;
@@ -58,8 +58,8 @@
     width: 20px;
     margin-right: 3px;
 }
-.send-btn {
-    width: 100%;
+.contact-me .send-btn {
+    /* width: 100%; */
 }
 .s-desktop {
     display: none;
@@ -94,4 +94,12 @@
         align-items: center;
         padding-left: 70px;
     }
+    #name, #message {
+        line-height: 7vh;
+        width: 100%;
+    }  
+    #email {
+        line-height: 9vh;
+        width: 100%;
+    } 
 }

@@ -28,6 +28,9 @@ export default function Navigation() {
 
     return `rgba(8, 11, 24, ${percentage / 100})`;
   };
+  const toggleLinks = () => {
+    setShowLinks(!showLinks); // Toggle the state to show/hide links
+  };
   return (
     <nav
       className={scrolling ? "scrolling" : ""}
