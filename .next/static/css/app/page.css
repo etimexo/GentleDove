@@ -102,6 +102,11 @@
         height: 45px;
         
     }
+    .phone:hover {
+        background-color: #fff;
+        border: none;
+        border-radius: 30px;
+    }
 }
 /*!*************************************************************************************************************************************************************************************************************************************************************************!*\
   !*** css ./node_modules/next/dist/build/webpack/loaders/css-loader/src/index.js??ruleSet[1].rules[11].oneOf[12].use[2]!./node_modules/next/dist/build/webpack/loaders/postcss-loader/src/index.js??ruleSet[1].rules[11].oneOf[12].use[3]!./src/app/Components/Code.css ***!
@@ -130,13 +135,15 @@
 }
 .code .source-code {
     margin-top: 10px;
-    color: #ffffff;
+    color: #000000;
     background-color: #ff2e5b;
     padding: 20px 25px;
     border: none;
     font-size: 1.1rem;
     font-weight: bold;
 }
+
+
 /*!****************************************************************************************************************************************************************************************************************************************************************************!*\
   !*** css ./node_modules/next/dist/build/webpack/loaders/css-loader/src/index.js??ruleSet[1].rules[11].oneOf[12].use[2]!./node_modules/next/dist/build/webpack/loaders/postcss-loader/src/index.js??ruleSet[1].rules[11].oneOf[12].use[3]!./src/app/Components/Contact.css ***!
   \****************************************************************************************************************************************************************************************************************************************************************************/
@@ -150,7 +157,6 @@
 }
 .contact-me .sec1 {
     margin-right: 50px;
-    /* position: sticky; */
 }
 .contact-me .sec1 p {
     margin-top: 20px;
@@ -167,7 +173,6 @@
     background-color: #161a2c;
     border: none;
     margin-bottom: 20px;
-    /* border: 1px solid #9498a5; */
     border-radius: 5px;
 }
 #name, #message {
@@ -191,13 +196,9 @@
     font-weight: bolder;
 }
 .contact-me .flex2 {
-    /* width: 70%; */
     display: flex;
     align-items: center;
     padding-left: 70px;
-    /* border: 1px solid red; */
-    /* position: relative;
-    left: 200px; */
 }
 .flex2:hover {
     color: #fff;
@@ -206,7 +207,6 @@
 .envelope {
     width: 20px;
     margin-right: 3px;
-    /* padding-top: 2px; */
 }
 /*!*************************************************************************************************************************************************************************************************************************************************************************!*\
   !*** css ./node_modules/next/dist/build/webpack/loaders/css-loader/src/index.js??ruleSet[1].rules[11].oneOf[12].use[2]!./node_modules/next/dist/build/webpack/loaders/postcss-loader/src/index.js??ruleSet[1].rules[11].oneOf[12].use[3]!./src/app/Components/home.css ***!
@@ -509,6 +509,36 @@
 /*!***************************************************************************************************************************************************************************************************************************************************************************!*\
   !*** css ./node_modules/next/dist/build/webpack/loaders/css-loader/src/index.js??ruleSet[1].rules[11].oneOf[12].use[2]!./node_modules/next/dist/build/webpack/loaders/postcss-loader/src/index.js??ruleSet[1].rules[11].oneOf[12].use[3]!./src/app/Components/Footer.css ***!
   \***************************************************************************************************************************************************************************************************************************************************************************/
+.footer {
+  min-height: -moz-fit-content;
+  min-height: fit-content;
+  padding: 20px;
+  background-color: #060918;
+  color: #fff;
+}
+.footer .hrf1 {
+  margin-top: -20px;
+}
+.footer .hrf2 {
+  margin-top: 30px;
+}
+.footer .hrf3 {
+  margin-top: 30px;
+}
+.footer p {
+  text-align: center;
+  font-size: 1.2rem;
+}
+.footer .links {
+  width: 100%;
+  margin: 0 auto;
+  text-align: center;
+}
+.footer .link-item {
+  color: #9498a5;
+  font-weight: bold;
+  text-transform: uppercase;
+}
 
 /*!*******************************************************************************************************************************************************************************************************************************************************************************!*\
   !*** css ./node_modules/next/dist/build/webpack/loaders/css-loader/src/index.js??ruleSet[1].rules[11].oneOf[12].use[2]!./node_modules/next/dist/build/webpack/loaders/postcss-loader/src/index.js??ruleSet[1].rules[11].oneOf[12].use[3]!./src/app/Components/navigation.css ***!
@@ -674,21 +704,15 @@ nav .contact {
     height: -moz-fit-content;
     height: fit-content;
     color: #9498a5;
-    /* color: #fff; */
     font-size: 1.1rem;
     text-align: left;
-    border-bottom-right-radius: 40px;
-    /* border-top-left-radius: 30px; */
-    
+    border-bottom-right-radius: 40px;    
 }
 .service-card .head {
     font-size: 1.9rem;
     font-weight: bold;
     margin-bottom: 10px;
-    /* color: #5b18cf; */
-    /* color: #6419f3; */
     color: #fff;
-
     text-align: center;
 }
 @media only screen and (min-width: 1024px) {

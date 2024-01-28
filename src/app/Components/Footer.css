@@ -1,0 +1,29 @@
+.footer {
+  min-height: fit-content;
+  padding: 20px;
+  background-color: #060918;
+  color: #fff;
+}
+.footer .hrf1 {
+  margin-top: -20px;
+}
+.footer .hrf2 {
+  margin-top: 30px;
+}
+.footer .hrf3 {
+  margin-top: 30px;
+}
+.footer p {
+  text-align: center;
+  font-size: 1.2rem;
+}
+.footer .links {
+  width: 100%;
+  margin: 0 auto;
+  text-align: center;
+}
+.footer .link-item {
+  color: #9498a5;
+  font-weight: bold;
+  text-transform: uppercase;
+}

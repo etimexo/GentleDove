@@ -57,7 +57,6 @@ export default function () {
           journey, projects, and let's embark on a meaningful connection
           together. Welcome to my digital space!
         </p>
-        
         <div
           id="arrow"
           className={scrolling ? "scrolling" : ""}
@@ -69,8 +68,6 @@ export default function () {
         </div>
         <div
           id="phone"
-          // className={scrolling ? "scrolling" : ""}
-          // style={{ display: scrolling ? block2() : "none" }}
         >
           <a href="#contact-me">
             <Image src={phone} className="phone" alt="back to the top" />

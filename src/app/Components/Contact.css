@@ -8,7 +8,6 @@
 }
 .contact-me .sec1 {
     margin-right: 50px;
-    /* position: sticky; */
 }
 .contact-me .sec1 p {
     margin-top: 20px;
@@ -25,7 +24,6 @@
     background-color: #161a2c;
     border: none;
     margin-bottom: 20px;
-    /* border: 1px solid #9498a5; */
     border-radius: 5px;
 }
 #name, #message {
@@ -49,13 +47,9 @@
     font-weight: bolder;
 }
 .contact-me .flex2 {
-    /* width: 70%; */
     display: flex;
     align-items: center;
     padding-left: 70px;
-    /* border: 1px solid red; */
-    /* position: relative;
-    left: 200px; */
 }
 .flex2:hover {
     color: #fff;
@@ -64,5 +58,4 @@
 .envelope {
     width: 20px;
     margin-right: 3px;
-    /* padding-top: 2px; */
 }

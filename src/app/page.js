@@ -6,6 +6,7 @@ import Services from './Components/Service'
 import Contact from './Components/Contact'
 import Code from './Components/Code'
 import Footer from './Components/Footer'
+// import Footer from './Footer'
 import "./globals.css"
 
 
