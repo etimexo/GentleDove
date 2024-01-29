@@ -83,6 +83,9 @@
     .image {
         width: 50%;
     }
+    .image .profile-pic {
+        /* width: 77px; */
+    }
     .about-sec {
         width: 50%;
         padding: 40px;
@@ -287,146 +290,6 @@
 /*!*************************************************************************************************************************************************************************************************************************************************************************!*\
   !*** css ./node_modules/next/dist/build/webpack/loaders/css-loader/src/index.js??ruleSet[1].rules[11].oneOf[12].use[2]!./node_modules/next/dist/build/webpack/loaders/postcss-loader/src/index.js??ruleSet[1].rules[11].oneOf[12].use[3]!./src/app/Components/home.css ***!
   \*************************************************************************************************************************************************************************************************************************************************************************/
-/* .home {
-  height: 100vh;
-  background-color: #5321b8;
-  background-image: url("../assets/future-grid.webp");
-  background-size: 100%;
-  background-attachment: fixed;
-}
-.home h1 {
-  color: #fff;
-  padding: 10% 15% 0;
-  text-align: center;
-  font-size: 7.5vw;
-}
-.home .buttons {
-  text-align: center;
-  width: 100%;
-  margin: 0px auto;
-  padding-top: 50px;
-}
-.home-btn {
-  width: 25vw;
-  height: 70px;
-  font-size: 1.4rem;
-  margin-right: 20px;
-  border: none;
-  border-radius: 3px;
-}
-.home .services {
-  background-color: #6919ff;
-  color: #fff;
-  border: 1px solid #fff;
-  position: relative;
-  z-index: 1;
-  transition: 0.5s;
-}
-.home .projects {
-  background-color: #fff;
-  color: #6919ff;
-  border-radius: 5px;
-  position: relative;
-  z-index: 1;
-  transition: 0.5s;
-}
-@media only screen and (min-width: 270px) and (max-width: 480px) {
-  .home h1 {
-    font-size: 2rem;
-  }
-}
-@media only screen and (max-width: 639px) {
-  .home h1 {
-    padding: 18% 10% 8%;
-    font-size: 2.7rem;
-  }
-  .home .buttons {
-    text-align: center;
-    width: 100%;
-    padding: 0;
-    margin: 0 auto;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-  }
-  .home .home-btn {
-    width: 32vw;
-    display: block;
-    margin-bottom: 20px;
-    text-align: center;
-  }
-}
-@media only screen and (min-width: 415px) {
-}
-@media only screen and (min-width: 640px) and (max-width: 1023px) {
-  .home h1 {
-    padding: 20% 10% 2%;
-    font-size: 2.8rem;
-  }
-}
-@media only screen and (min-width: 1024px) {
-  .home h1 {
-    color: #fff;
-    padding: 8% 15% 0;
-    text-align: center;
-    font-size: 5rem;
-  }
-  .projects:hover,
-  .projects:focus {
-    color: #fff;
-    background-color: #6919ff;
-    border: 1px solid #fff;
-    transform: scaleX(1.1);
-    margin-right: 40px;
-    cursor: pointer;
-  }
-  .projects::before {
-    content: "";
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    background-color: #fff;
-    z-index: -1;
-    transform-origin: right;
-    transition: transform 0.5s ease;
-    transform: scaleX(1);
-  }
-  .projects:hover::before {
-    transform-origin: right;
-    transition: transform 0.5s ease;
-    transform: scaleX(0);
-  }
-  .services:hover,
-  .services:focus {
-    color: #6919ff;
-    background-color: #fff;
-    border: 1px solid #fff;
-    transform: scaleX(1.1);
-    margin-left: 20px;
-    cursor: pointer;
-  }
-  .services::before {
-    content: "";
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    background-color: #6919ff;
-    z-index: -1;
-    transform-origin: right;
-    transition: transform 0.5s ease;
-    transform: scaleX(1);
-  }
-  .services:hover::before {
-    transform-origin: right;
-    transition: transform 0.5s ease;
-    transform: scaleX(0);
-  }
-} */
 .home {
   height: 100vh;
   background-color: #5321b8;
@@ -497,7 +360,8 @@
     color: #fff;
     padding: 8% 15% 0;
     text-align: center;
-    font-size: 4.4rem;
+    /* font-size: 5rem; */
+    font-size: 5vw;
   }
   .home .buttons {
     display: flex;
@@ -662,8 +526,8 @@ nav {
   top: 0;
   z-index: 1;
 }
-nav .links {
-  
+nav .list-d {
+  display: none;
 }
 nav.scrolling {
   /* width: 90%; */
@@ -671,7 +535,7 @@ nav.scrolling {
   /* border: 0.4px solid #fff; */
   transition: background-color 0.5s ease;
   padding: 35px;
-  margin-top: 2vh;
+  /* margin-top: 20px; */
   border-radius: 50px;
 }
 nav .contact {
@@ -685,6 +549,38 @@ nav .contact {
   z-index: 1;
   transition: 0.5s;
 }
+nav .list {
+  width: 100%;
+  height: 100vh;
+  position: fixed;
+  left: -1000px;
+  top: 0;
+  display: flex;
+  flex-direction: column;
+  background-color: #080b18;
+  text-align: left;
+  transition: 0.5s;
+  padding-top: 18vh;
+}
+nav .list .link-item {
+  font-size: 3.7vw;
+  text-transform: uppercase;
+  color: #9498a5;
+  padding-left: 5vw;
+
+}
+nav .list.active {
+  transform: translateX(0);
+  left: 0;
+}
+nav .hamburger, .logo {
+  z-index: 1;
+}
+.links .hr {
+  width: 90%;
+  margin-top: 20px;
+  background-color: #9498a5;
+}
 @media only screen and (min-width: 270px) and (max-width: 480px) {
   nav {
     padding-top: 50px;
@@ -692,15 +588,14 @@ nav .contact {
 }
 @media only screen and (max-width: 639px) {
   nav {
-    padding-top: 50px;
+    padding-top: 30px;
   }
   nav.scrolling {
     width: 89%;
-
-    /* margin-top: 60px; */
-    margin: 50px auto;
-    /* padding: 20px; */
-    /* text-align: left; */
+    margin: 20px auto;
+  }
+  nav.logo {
+    font-size: 20px;
   }
 }
 @media only screen and (min-width: 640px) and (max-width: 1023px) {
@@ -709,7 +604,8 @@ nav .contact {
   }
 }
 @media only screen and (max-width: 1023px) {
-  nav .list {
+  
+  nav .list-d {
     position: fixed;
     right: -100%;
     top: 0;
@@ -748,6 +644,12 @@ nav .contact {
     /* border: 0.4px solid #fff; */
     transition: background-color 0.5s ease;
   }
+  nav .list {
+    display: none;
+  }
+  nav .list-d {
+    display: block;
+  }
   nav .hamburger {
     display: none;
   }
@@ -761,6 +663,7 @@ nav .contact {
     text-decoration: none;
     color: #fff;
     text-transform: uppercase;
+    font-size: 1.2vw;
   }
   ul li {
     display: inline;
@@ -789,6 +692,7 @@ nav .contact {
     transform: scaleX(1);
     border: 1px solid #fff;
     border-radius: 50px;
+    font-size: 1.2vw;
   }
   .contact:hover::before {
     transform-origin: right;

@@ -9,6 +9,7 @@ import "./navigation.css";
 
 export default function Navigation() {
   const [scrolling, setScrolling] = useState(false);
+  const [showLinks, setShowLinks] = useState(false)
 
   useEffect(() => {
     const handleScroll = () => {
@@ -31,12 +32,16 @@ export default function Navigation() {
   const toggleLinks = () => {
     setShowLinks(!showLinks); // Toggle the state to show/hide links
   };
+  const closeMenu = () => {
+    setShowLinks(false); // Close the menu when a link is clicked
+  };
+  
   return (
     <nav
       className={scrolling ? "scrolling" : ""}
       style={{ backgroundColor: calculateBackgroundColor() }}
     >
-      <div className="list">
+      <div className="list-d">
         <ul className="links">
           <li>
             <a href="#about" className="link-item">
@@ -55,7 +60,29 @@ export default function Navigation() {
           </li>
         </ul>
       </div>
-      <div className="hamburger">
+      <div className={`list ${showLinks ? "active" : ""}`}>
+        <ul className="links">
+          <li>
+            <a href="#about" className="link-item" onClick={closeMenu}>
+              About
+            </a>
+          </li>
+          <hr className="hr" />
+          <li>
+            <a href="#work" className="link-item" onClick={closeMenu}>
+              Works
+            </a>
+          </li>
+          <hr className="hr" />
+          <li>
+            <a href="#service" className="link-item" onClick={closeMenu}>
+              Services
+            </a>
+          </li>
+          <hr className="hr" />
+        </ul>
+      </div>
+      <div className="hamburger" onClick={toggleLinks}>
         <div className="line"></div>
         <div className="line"></div>
         <div className="line"></div>

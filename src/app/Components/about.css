@@ -80,6 +80,9 @@
     .image {
         width: 50%;
     }
+    .image .profile-pic {
+        /* width: 77px; */
+    }
     .about-sec {
         width: 50%;
         padding: 40px;
