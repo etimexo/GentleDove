@@ -10,7 +10,7 @@ import Footer from './Components/Footer'
 import "./globals.css"
 
 
-export default function () {
+export default function page() {
   return (
     <div className='main-page'>
       <Home />

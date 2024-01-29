@@ -9,8 +9,8 @@ export default function Contact() {
         <button className="about-btn">Contact</button>
         <h1>Got a problem to solve?</h1>
         <p>
-          I'm passionate about turning your ideas into stunning web solutions.
-          Don't hesitate to drop me a message, and let's begin creating
+          I&apos;m passionate about turning your ideas into stunning web solutions.
+          Don&apos;t hesitate to drop me a message, and let&apos;s begin creating
           something extraordinary together. Looking forward to connecting with
           you!
         </p>
@@ -71,3 +71,4 @@ export default function Contact() {
     </div>
   );
 }
+Contact.displayName = 'Contact';

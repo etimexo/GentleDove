@@ -7,7 +7,7 @@ import Image from "next/image";
 import arrow from "../assets/up-arrow.png";
 import phone from "../assets/phone.png";
 
-export default function () {
+export default function About() {
   const [scrolling, setScrolling] = useState(false);
 
   useEffect(() => {
@@ -26,9 +26,6 @@ export default function () {
   const block = () => {
     return `block`;
   };
-  // const block2 = () => {
-  //   return `block`;
-  // };
   const [typeEffect] = useTypewriter({
     words: ["Tech enthusiast", "Full stack developer", "freelancer"],
     loop: {},
@@ -41,20 +38,20 @@ export default function () {
         <Image
           src={gentleDove}
           className="profile-pic"
-          alt="GentleDove's display picture"
+          alt="GentleDoves display picture"
         />
       </div>
       <div className="about-sec">
         <button className="about-btn">About</button>
         <br />
         <h1 className="type">
-          I'm a <span>{typeEffect}</span>
+          I&apos;m a <span>{typeEffect}</span>
         </h1>
         <p>
-          Hi there! I'm Obisesan Elijah(GentleDove), a full-stack developer with
+          Hi there! I&apos;m Obisesan Elijah(GentleDove), a full-stack developer with
           a passion for the tech space and everything related to it. Through
           creativity and innovation, I bring website designs to life. Explore my
-          journey, projects, and let's embark on a meaningful connection
+          journey, projects, and let&apos;s embark on a meaningful connection
           together. Welcome to my digital space!
         </p>
         <div
@@ -77,3 +74,4 @@ export default function () {
     </div>
   );
 }
+About.displayName = 'About';

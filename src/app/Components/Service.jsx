@@ -21,7 +21,7 @@ export default function Service() {
           <div className="service-card">
             <h1 className="head">Benefits</h1>
             <p>
-              By choosing my web development services, you'll enjoy a sleek and
+              By choosing my web development services, you&apos;ll enjoy a sleek and
               functional website, improved user engagement, and a seamless
               online experience for your visitors. Elevate your brand with a
               visually appealing and technically robust web presence.
@@ -59,8 +59,8 @@ export default function Service() {
             <h1 className="head">Getting started</h1>
             <p>
               Getting started is easy. Reach out to me via email or phone, and
-              we'll schedule a consultation to discuss your web development
-              needs. From conceptualization to deployment, I'll guide you
+              we&apos;ll schedule a consultation to discuss your web development
+              needs. From conceptualization to deployment, I&aposll guide you
               through the process to ensure a successful online presence.
             </p>
           </div>
@@ -70,3 +70,4 @@ export default function Service() {
     </div>
   );
 }
+Service.displayName = 'Service';

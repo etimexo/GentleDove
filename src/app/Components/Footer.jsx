@@ -29,7 +29,7 @@ export default function Footer() {
           </a>
         </li>
       </ul>
-      {/* <hr className="hr hrf3" /> */}
     </div>
   );
 }
+Footer.displayName = 'Footer';

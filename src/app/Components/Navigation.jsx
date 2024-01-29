@@ -1,12 +1,6 @@
 "use client";
 import React, { useEffect, useState } from "react";
 import "./navigation.css";
-// import Home from './Components/Home'
-// import About from './Components/About'
-// import Work from './Components/Work'
-// import Services from './Components/Service'
-// import Contact from './Components/Contact'
-
 export default function Navigation() {
   const [scrolling, setScrolling] = useState(false)
   const [showLinks, setShowLinks] = useState(false)
@@ -95,3 +89,4 @@ export default function Navigation() {
     </nav>
   );
 }
+Navigation.displayName = 'Navigation';

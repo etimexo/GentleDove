@@ -27,7 +27,6 @@ const PauseOnHover = () => {
 
   return (
     <div className="work" id="work">
-      {/* <Image src={line1} /> */}
       <hr className="hr" />
       <div className="but-house">
         <button className="about-btn">My works</button>
