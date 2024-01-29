@@ -11,8 +11,8 @@ export default function Home() {
         collide.
       </h1>
       <div className="buttons">
-        <button className="projects home-btn">View projects</button>
-        <button className="services home-btn">My services</button>
+        <a href="#work"><button className="projects home-btn">View projects</button></a>
+        <a href="#service"><button className="services home-btn">My services</button></a>
       </div>
     </div>
   );

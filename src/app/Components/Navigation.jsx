@@ -8,8 +8,9 @@ import "./navigation.css";
 // import Contact from './Components/Contact'
 
 export default function Navigation() {
-  const [scrolling, setScrolling] = useState(false);
+  const [scrolling, setScrolling] = useState(false)
   const [showLinks, setShowLinks] = useState(false)
+  const [cross, setCross] = useState(false)
 
   useEffect(() => {
     const handleScroll = () => {
@@ -27,13 +28,15 @@ export default function Navigation() {
   const calculateBackgroundColor = () => {
     const percentage = scrolling ? 80 : 0;
 
-    return `rgba(8, 11, 24, ${percentage / 100})`;
+    return `rgba(8, 11, 24, ${percentage / 100})`
   };
   const toggleLinks = () => {
-    setShowLinks(!showLinks); // Toggle the state to show/hide links
+    setShowLinks(!showLinks)
+    setCross(!cross)
   };
   const closeMenu = () => {
-    setShowLinks(false); // Close the menu when a link is clicked
+    setShowLinks(false)
+    setCross(false)
   };
   
   return (
@@ -82,13 +85,13 @@ export default function Navigation() {
           <hr className="hr" />
         </ul>
       </div>
-      <div className="hamburger" onClick={toggleLinks}>
+      <div className={`hamburger ${cross ? "cross" : ""}`} onClick={toggleLinks}>
         <div className="line"></div>
         <div className="line"></div>
         <div className="line"></div>
       </div>
       <div className="logo">GentleDove</div>
-      <button className="contact">Hit me up</button>
+      <a href="#contact-me"><button className="contact">Hit me up</button></a>
     </nav>
   );
 }

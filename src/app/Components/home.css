@@ -39,6 +39,22 @@
   max-width: 400px;
   margin-bottom: 20px;
 }
+.home .services {
+  background-color: #6919ff;
+  color: #fff;
+  border: 1px solid #fff;
+  position: relative;
+  z-index: 1;
+  transition: 0.5s;
+}
+.home .projects {
+  background-color: #fff;
+  color: #6919ff;
+  border-radius: 5px;
+  position: relative;
+  z-index: 1;
+  transition: 0.5s;
+}
 
 @media only screen and (min-width: 270px) and (max-width: 480px) {
   .home h1 {
@@ -50,6 +66,20 @@
   .home h1 {
     padding: 18% 10% 8%;
     font-size: 2.7rem;
+  }
+  .home .buttons {
+    display: flex;
+    text-align: center;
+    width: 100%;
+    justify-content: center;
+    padding: 0;
+    align-items: center;
+  }
+  .home .home-btn {
+    width: 35vw;
+    margin-right: 50px;
+    margin-top: 12%;
+    text-align: center;
   }
 }
 
@@ -73,13 +103,20 @@
   }
   .home .buttons {
     display: flex;
-    /* margin-right: 50px; */
+    text-align: center;
+    width: 100%;
+    justify-content: center;
+    padding: 0;
+    align-items: center;
   }
   .home .home-btn {
+    width: 35vw;
     margin-right: 50px;
-    margin-top: -12px;
+    margin-top: 12%;
+    text-align: center;
   }
   .home .services {
+    
     background-color: #6919ff;
     color: #fff;
     border: 1px solid #fff;
@@ -99,8 +136,8 @@
   .home .buttons,
   .home .services,
   .home .projects {
-    width: 60%;
-    max-width: 800px;
+    /* width: 60%;
+    max-width: 800px; */
   }
   .projects:hover,
   .projects:focus {

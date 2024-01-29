@@ -5,7 +5,7 @@ export default function Footer() {
   return (
     <div className="footer">
       <hr className="hr hrf1" />
-      <p className="name">GentleDove</p>
+      <p className="name logo">GentleDove</p>
       <hr className="hr hrf2" />
       <ul className="links">
         <li>

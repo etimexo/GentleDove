@@ -15,6 +15,9 @@ nav {
   top: 0;
   z-index: 1;
 }
+/* nav .logo {
+  font-family: 'Pacifico', cursive;
+} */
 nav .list-d {
   display: none;
 }
@@ -24,7 +27,7 @@ nav.scrolling {
   /* border: 0.4px solid #fff; */
   transition: background-color 0.5s ease;
   padding: 35px;
-  /* margin-top: 20px; */
+  margin-top: 20px;
   border-radius: 50px;
 }
 nav .contact {
@@ -70,6 +73,7 @@ nav .hamburger, .logo {
   margin-top: 20px;
   background-color: #9498a5;
 }
+
 @media only screen and (min-width: 270px) and (max-width: 480px) {
   nav {
     padding-top: 50px;
@@ -86,6 +90,22 @@ nav .hamburger, .logo {
   nav.logo {
     font-size: 20px;
   }
+}
+.hamburger.cross .line:nth-child(1) {
+  transform: translateY(5px) rotate(45deg);
+  transition: .5s ease-in-out;
+}
+
+.hamburger.cross .line:nth-child(2) {
+  opacity: 0;
+  transition: .5s ease-in-out;
+
+}
+
+.hamburger.cross .line:nth-child(3) {
+  transform: translateY(-5px) rotate(-45deg);
+  transition: .5s ease-in-out;
+
 }
 @media only screen and (min-width: 640px) and (max-width: 1023px) {
   nav {

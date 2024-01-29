@@ -15,7 +15,7 @@
     padding: 40px;
 }
 .about-btn {
-    width: 20vw;
+    width: 30vw;
     height: 50px;
     background-color: #100b30;
     color: #5c17e1;
@@ -331,6 +331,22 @@
   max-width: 400px;
   margin-bottom: 20px;
 }
+.home .services {
+  background-color: #6919ff;
+  color: #fff;
+  border: 1px solid #fff;
+  position: relative;
+  z-index: 1;
+  transition: 0.5s;
+}
+.home .projects {
+  background-color: #fff;
+  color: #6919ff;
+  border-radius: 5px;
+  position: relative;
+  z-index: 1;
+  transition: 0.5s;
+}
 
 @media only screen and (min-width: 270px) and (max-width: 480px) {
   .home h1 {
@@ -342,6 +358,20 @@
   .home h1 {
     padding: 18% 10% 8%;
     font-size: 2.7rem;
+  }
+  .home .buttons {
+    display: flex;
+    text-align: center;
+    width: 100%;
+    justify-content: center;
+    padding: 0;
+    align-items: center;
+  }
+  .home .home-btn {
+    width: 35vw;
+    margin-right: 50px;
+    margin-top: 12%;
+    text-align: center;
   }
 }
 
@@ -365,13 +395,20 @@
   }
   .home .buttons {
     display: flex;
-    /* margin-right: 50px; */
+    text-align: center;
+    width: 100%;
+    justify-content: center;
+    padding: 0;
+    align-items: center;
   }
   .home .home-btn {
+    width: 35vw;
     margin-right: 50px;
-    margin-top: -12px;
+    margin-top: 12%;
+    text-align: center;
   }
   .home .services {
+    
     background-color: #6919ff;
     color: #fff;
     border: 1px solid #fff;
@@ -391,8 +428,8 @@
   .home .buttons,
   .home .services,
   .home .projects {
-    width: 60%;
-    max-width: 800px;
+    /* width: 60%;
+    max-width: 800px; */
   }
   .projects:hover,
   .projects:focus {
@@ -526,6 +563,9 @@ nav {
   top: 0;
   z-index: 1;
 }
+/* nav .logo {
+  font-family: 'Pacifico', cursive;
+} */
 nav .list-d {
   display: none;
 }
@@ -535,7 +575,7 @@ nav.scrolling {
   /* border: 0.4px solid #fff; */
   transition: background-color 0.5s ease;
   padding: 35px;
-  /* margin-top: 20px; */
+  margin-top: 20px;
   border-radius: 50px;
 }
 nav .contact {
@@ -581,6 +621,7 @@ nav .hamburger, .logo {
   margin-top: 20px;
   background-color: #9498a5;
 }
+
 @media only screen and (min-width: 270px) and (max-width: 480px) {
   nav {
     padding-top: 50px;
@@ -597,6 +638,22 @@ nav .hamburger, .logo {
   nav.logo {
     font-size: 20px;
   }
+}
+.hamburger.cross .line:nth-child(1) {
+  transform: translateY(5px) rotate(45deg);
+  transition: .5s ease-in-out;
+}
+
+.hamburger.cross .line:nth-child(2) {
+  opacity: 0;
+  transition: .5s ease-in-out;
+
+}
+
+.hamburger.cross .line:nth-child(3) {
+  transform: translateY(-5px) rotate(-45deg);
+  transition: .5s ease-in-out;
+
 }
 @media only screen and (min-width: 640px) and (max-width: 1023px) {
   nav {
@@ -766,8 +823,6 @@ nav .hamburger, .logo {
   width: 100%;
   padding: 50px;
   background-color: #060918;
-  /* border: 1px solid red; */
-  /* border-top: 1px  solid #363535; */
 }
 .hr {
   width: 80%;
