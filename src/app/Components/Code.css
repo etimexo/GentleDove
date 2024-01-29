@@ -2,13 +2,14 @@
     background-image: url("../assets/download.png");
     width: 100%;
     min-height: fit-content;
-    padding: 10vw 20vw;
+    padding: 10vw 12vw;
     margin: 0 auto;
     display: flex;
     justify-content: center;
     align-items: center;
     text-align: center;
     color: #fff;
+    font-size: 4.6vw;
 }
 .code .about-btn {
     width: fit-content;
@@ -27,4 +28,8 @@
     font-size: 1.1rem;
     font-weight: bold;
 }
-
+@media only screen and (min-width: 1024px) {
+    .code {
+        padding: 10vw 20vw;
+    }
+}
