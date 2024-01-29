@@ -13,18 +13,13 @@ nav {
   padding: 3% 5%;
   color: #fff;
   top: 0;
-  z-index: 1;
+  z-index: 10000;
 }
-/* nav .logo {
-  font-family: 'Pacifico', cursive;
-} */
 nav .list-d {
   display: none;
 }
 nav.scrolling {
-  /* width: 90%; */
   background-color: #080b18;
-  /* border: 0.4px solid #fff; */
   transition: background-color 0.5s ease;
   padding: 35px;
   margin-top: 20px;

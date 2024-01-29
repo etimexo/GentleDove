@@ -59,10 +59,10 @@
 .preview, .source {
   display: none;
   background-color: #ccc7c7;
-  border: none;
-  width: 16vw;
-  height: 50px;
-  border-radius: 20px;
+  border: none; 
+  width: 35vw;
+  height: 70px;
+  border-radius: 50px;
   font-size: 1.1rem;
   font-weight: bold;
 }
@@ -75,3 +75,9 @@
 .gyme .preview:hover {
   cursor: not-allowed;
 }  
+@media only screen and (min-width: 1024px) {
+  .preview, .source {
+    width: 16vw;
+    height: 50px;
+  }
+}
