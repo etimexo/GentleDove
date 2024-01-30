@@ -10,7 +10,7 @@ export default function Service() {
         <br />
         <div className="cards grid">
           <div className="service-card">
-            <h1 className="head">Service Offerings</h1>
+            <h1 className="head">My services</h1>
             <p>
               As a web development expert, I provide a comprehensive suite of
               services to elevate your online presence. From creating responsive
