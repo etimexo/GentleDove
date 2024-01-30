@@ -31,5 +31,9 @@
 @media only screen and (min-width: 1024px) {
     .code {
         padding: 10vw 20vw;
+        font-size: 2vw;
+    }
+    .code p {
+        font-size: 2vw;
     }
 }

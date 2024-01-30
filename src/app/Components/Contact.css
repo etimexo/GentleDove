@@ -43,9 +43,12 @@
     left: -70px;
 }
 .contact-me .sec2 .send-btn {
+    width: 80%;
     font-size: 2rem;
     padding: 10px;
     font-weight: bolder;
+    /* text-align: center; */
+    margin: 0 auto;
 }
 .contact-me .flex2 {
     display: flex;

@@ -6,7 +6,7 @@ export default function Contact() {
   return (
     <div className="contact-me" id="contact-me">
       <div className="sec1">
-        <button className="about-btn">Contact</button>
+        <button className="about-btn">Contact me</button>
         <h1>Got a problem to solve?</h1>
         <p>
           I&apos;m passionate about turning your ideas into stunning web solutions.
@@ -16,7 +16,7 @@ export default function Contact() {
         </p>
       </div>
       <div className="sec2">
-        <form action="get">
+        <form action="http://localhost:5000/send-email" method="POST">
           <p>NAME</p>
           <input type="text" name="name" id="name" />
           <p>MESSAGE</p>
@@ -43,7 +43,7 @@ export default function Contact() {
                 <span className="s-desktop">elijahobisesan01@gmail.com</span>
               </p>
             </a>
-            <button type="submit" className="send-btn services">
+            <button type="submit" className="send-btn services" disabled>
               Send
             </button>
             <a href="mailto:elijahobisesan01@gmail.com">

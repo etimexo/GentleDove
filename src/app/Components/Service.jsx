@@ -48,10 +48,10 @@ export default function Service() {
           <div className="service-card">
             <h1 className="head">Sample FAQs</h1>
             <p>
-              Q: What technologies do you use for web development? A: I leverage
+              Q: What technologies do you use for web development? <br /> A: I leverage
               industry-leading technologies such as React.js and Node.js to
-              create robust and scalable web solutions. Q: How long does it take
-              to build a website? A: Timelines vary, but I prioritize efficiency
+              create robust and scalable web solutions. <br /> Q: How long does it take
+              to build a website? <br /> A: Timelines vary, but I prioritize efficiency
               without compromising quality.
             </p>
           </div>
