@@ -31,23 +31,16 @@
   font-weight: bold;
   text-transform: uppercase;
   padding-right: 10px;
-  /* display: inline; */
-  /* border: 1px solid red; */
 }
 .footer .icons {
-    width: 100%;
-    text-align: center;
+  width: 100%;
+  text-align: center;
 }
 .footer .icons .icon {
-    /* text-align: center; */
-    width: 24px;
-    margin-right: 12px;
-    color: #9498a5;
-/* background-color: #9498a5; */
-/* border-radius: 20px; */
-border: none;
-    /* height: 15px; */
+  width: 24px;
+  margin-right: 12px;
+  color: #9498a5;
+  border: none;
 }
 @media only screen and (min-width: 1024px) {
-    
 }
