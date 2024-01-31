@@ -6,7 +6,7 @@
 .hr {
   width: 80%;
   margin: 0 auto 40px;
-  height: 1px; 
+  height: 1px;
   border: none;
   background: linear-gradient(to right, transparent, #fff, transparent);
 }
@@ -56,28 +56,36 @@
   color: #fff;
   background-color: #080320;
 }
-.preview, .source {
-  display: none;
+.preview,
+.source {
   background-color: #ccc7c7;
-  border: none; 
+  border: none;
   width: 35vw;
   height: 70px;
   border-radius: 50px;
   font-size: 1.1rem;
   font-weight: bold;
 }
-
-.card:hover .preview,
-.card:hover .source {
-  display: inline-block;
-  cursor: pointer;
-}
-.gyme .preview:hover {
+.gyme .preview {
   cursor: not-allowed;
-}  
+}
+
 @media only screen and (min-width: 1024px) {
-  .preview, .source {
+  .preview,
+  .source {
     width: 16vw;
     height: 50px;
+  }
+  .preview,
+  .source {
+    display: none;
+  }
+  .card:hover .preview,
+  .card:hover .source {
+    display: inline-block;
+    cursor: pointer;
+  }
+  .gyme .preview:hover {
+    cursor: not-allowed;
   }
 }

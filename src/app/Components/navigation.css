@@ -155,7 +155,6 @@ nav .hamburger, .logo {
   }
   nav.scrolling {
     background-color: #080b18;
-    /* border: 0.4px solid #fff; */
     transition: background-color 0.5s ease;
   }
   nav .list {
