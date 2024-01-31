@@ -77,6 +77,12 @@ export default function Navigation() {
             </a>
           </li>
           <hr className="hr" />
+          <li>
+            <a href="#skills" className="link-item" onClick={closeMenu}>
+              Skills
+            </a>
+          </li>
+          <hr className="hr" />
         </ul>
       </div>
       <div className={`hamburger ${cross ? "cross" : ""}`} onClick={toggleLinks}>

@@ -13,7 +13,7 @@ import physics from "../assets/physics.png";
 
 export default function Skills() {
   return (
-    <div className="skills">
+    <div className="skills" id="skills">
       <button className="about-btn">My skills</button>
       <div className="skill">
         <Image src={html} attribute="html-logo" className="skill-img" />
