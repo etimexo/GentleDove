@@ -16,7 +16,7 @@ export default function Contact() {
         </p>
       </div>
       <div className="sec2">
-        <form action="http://localhost:5000/send-email" method="POST">
+        <form name="contact" method="POST" data-netlify="true">
           <p>NAME</p>
           <input type="text" name="name" id="name" />
           <p>MESSAGE</p>
