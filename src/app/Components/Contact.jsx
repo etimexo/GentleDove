@@ -43,7 +43,7 @@ export default function Contact() {
                 <span className="s-desktop">elijahobisesan01@gmail.com</span>
               </p>
             </a>
-            <button type="submit" className="send-btn services" disabled>
+            <button type="submit" className="send-btn services">
               Send
             </button>
             <a href="mailto:elijahobisesan01@gmail.com">
